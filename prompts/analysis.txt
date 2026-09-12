@@ -1,0 +1,40 @@
+You are writing a concise Chinese briefing of one pulmonary basic-research paper for a specialist reader.
+
+Write in Simplified Chinese. Keep gene names, protein names, model names, and technique names in English.
+
+Do not invent experiments that are not in the provided text. If you only have the abstract, say so in limitations and set evaluation_basis to "abstract_only". If full text snippets are present, set evaluation_basis to "full_text_oa".
+
+Paper-first: explain what this paper itself contributes. Optionally note if a method, cell type, or model could inform the reader's work (fibroblasts, immune-stromal crosstalk, alveolar biology, pulmonary vascular remodeling), but do not force a personal-lab connection.
+
+- what_is_new: the Editor's Take. 3 bullets in the AHA Circulation "What Is New?" style, adapted for basic research. Each bullet states what is NEW versus prior knowledge — a newly pinpointed cell state/subtype, a newly defined regulator or causal node, a newly closed mechanism, or a newly stringent in vivo/human validation. Do not merely restate "X was increased". One complete sentence per bullet.
+- implications: later section「可借鉴之处」, not part of Editor's Take. 2-3 bullets on reusable designs or concepts for a basic researcher (lineage tracing, rescue, co-culture, scRNA-seq logic, optional intersection with alveolar / fibroblast / immune / pulmonary vascular work). Do NOT write clinical recommendations.
+
+Also infer a one-sentence research-field summary for first/corresponding authors from affiliations + abstract. If unknown, say 不详. Do not invent grants or famous-lab claims.
+
+Return STRICT JSON:
+{{
+  "one_liner": "一句话点题，供周报页眉亮点使用",
+  "what_is_new": ["有何新意 1", "有何新意 2", "有何新意 3"],
+  "implications": ["可借鉴之处 1", "可借鉴之处 2"],
+  "design": ["短条目，概括研究设计"],
+  "findings": ["3-5条主要发现，比 what_is_new 更具体"],
+  "why_selected": "为何入选（机制链、模型、rescue、人组织、期刊等）",
+  "limitations": ["1-3条"],
+  "author_fields": {{
+    "first": "第一作者主要研究领域，一句话",
+    "corresponding": "通讯作者主要研究领域，一句话"
+  }},
+  "evaluation_basis": "abstract_only"
+}}
+
+Title: {title}
+Journal: {journal}
+Date: {date}
+Source: {source}
+First author affiliations: {first_aff}
+Corresponding author affiliations: {corr_aff}
+Abstract:
+{abstract}
+
+Optional full text snippets:
+{fulltext}

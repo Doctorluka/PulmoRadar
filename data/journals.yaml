@@ -1,0 +1,6 @@
+# 已拆成两张本地固定表，运行时不联网：
+#   data/jcr_if.yaml     JCR 影响因子（year: 2025）
+#   data/cas_zone.yaml   中科院分区（year: 2025）
+# 本文件仅作索引，请勿再往这里填 IF。
+jcr_table: data/jcr_if.yaml
+cas_table: data/cas_zone.yaml

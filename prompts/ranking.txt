@@ -1,0 +1,33 @@
+You are ranking original basic-research papers for a pulmonary scientist.
+
+Topic: {topic_name}
+
+Focus:
+{focus}
+
+Score each paper 0-10 on:
+- mechanism: genetic/pharmacologic intervention, rescue, causal chain (not just correlation)
+- methods: experimental rigor (cell-specific KO, disease model, orthogonal assays, human tissue)
+- novelty: new biological insight, not incremental description
+- fit: how well it matches the focus above (fibroblast/immune/alveolar work for COPD-fibrosis; PH vascular biology for PAH). Reader interests may add a little, but do NOT require a match to the reader's own projects.
+
+{journal_note}
+
+scRNA-seq / spatial data is a bonus, not a ticket by itself.
+
+Return STRICT JSON:
+{{
+  "papers": [
+    {{
+      "id": "string",
+      "mechanism": 0,
+      "methods": 0,
+      "novelty": 0,
+      "fit": 0,
+      "why": "one sentence"
+    }}
+  ]
+}}
+
+Papers:
+{papers_block}

@@ -1,0 +1,228 @@
+# 本地固定表：JCR Journal Impact Factor
+# 运行时不联网。年份 = Clarivate 发布该批 IF 所用的引文年。
+# 2026-06 LetPub 已更新“2026年6月最新影响因子”，对应 JCR 2025（2025 年引文 / 2023–2024 论文）。
+# 核对来源：LetPub 期刊检索（2026-09-12）。未在本次检索到的刊保留上一版数值并标 source: carry_forward。
+year: 2025
+source: "JCR 2025 as reported by LetPub, June 2026 update"
+retrieved: "2026-09-12"
+journals:
+  - names: ["Circulation"]
+    issn: ["0009-7322", "1524-4539"]
+    impact_factor: 41.3
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["Circulation Research"]
+    issn: ["0009-7330", "1524-4571"]
+    impact_factor: 18.0
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["European Heart Journal", "Eur Heart J"]
+    issn: ["0195-668X", "1522-9645"]
+    impact_factor: 45.3
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["European Respiratory Journal", "Eur Respir J"]
+    issn: ["0903-1936", "1399-3003"]
+    impact_factor: 23.8
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["American Journal of Respiratory and Critical Care Medicine", "Am J Respir Crit Care Med"]
+    issn: ["1073-449X", "1535-4970"]
+    impact_factor: 21.7
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["Arteriosclerosis, Thrombosis, and Vascular Biology", "Arterioscler Thromb Vasc Biol", "ATVB"]
+    issn: ["1079-5642", "1524-4636"]
+    impact_factor: 8.8
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["Hypertension"]
+    issn: ["0194-911X", "1524-4563"]
+    impact_factor: 9.8
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["Nature Communications", "Nat Commun"]
+    issn: ["2041-1723"]
+    impact_factor: 18.1
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["Nature"]
+    issn: ["0028-0836", "1476-4687"]
+    impact_factor: 56.1
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["Science"]
+    issn: ["0036-8075", "1095-9203"]
+    impact_factor: 47.3
+    jcr: "Q1"
+    source: letpub_2026_06
+  - names: ["Cell"]
+    issn: ["0092-8674", "1097-4172"]
+    impact_factor: 45.5
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Nature Medicine", "Nat Med"]
+    issn: ["1078-8956", "1546-170X"]
+    impact_factor: 58.7
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Nature Immunology", "Nat Immunol"]
+    issn: ["1529-2908", "1529-2916"]
+    impact_factor: 27.7
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["The Lancet Respiratory Medicine", "Lancet Respir Med"]
+    issn: ["2213-2600", "2213-2619"]
+    impact_factor: 38.7
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["The Journal of Clinical Investigation", "Journal of Clinical Investigation", "J Clin Invest"]
+    issn: ["0021-9738", "1558-8238"]
+    impact_factor: 13.3
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["JCI Insight"]
+    issn: ["2379-3708"]
+    impact_factor: 8.0
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Cardiovascular Research", "Cardiovasc Res"]
+    issn: ["0008-6363", "1755-3245"]
+    impact_factor: 10.8
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Thorax"]
+    issn: ["0040-6376", "1468-3296"]
+    impact_factor: 9.0
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Chest"]
+    issn: ["0012-3692", "1931-3543"]
+    impact_factor: 9.6
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["American Journal of Respiratory Cell and Molecular Biology", "Am J Respir Cell Mol Biol"]
+    issn: ["1044-1549", "1535-4989"]
+    impact_factor: 6.4
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["European Respiratory Review", "Eur Respir Rev"]
+    issn: ["0905-9180", "1600-0617"]
+    impact_factor: 8.8
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Respiratory Research", "Respir Res"]
+    issn: ["1465-9921", "1465-993X"]
+    impact_factor: 5.8
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["American Journal of Physiology. Lung Cellular and Molecular Physiology", "American Journal of Physiology-Lung Cellular and Molecular Physiology", "Am J Physiol Lung Cell Mol Physiol"]
+    issn: ["1040-0605", "1522-1504"]
+    impact_factor: 4.0
+    jcr: "Q2"
+    source: carry_forward
+  - names: ["Pulmonary Circulation"]
+    issn: ["2045-8932", "2045-8940"]
+    impact_factor: 2.4
+    jcr: "Q3"
+    source: letpub_2026_06
+  - names: ["Journal of Heart and Lung Transplantation", "J Heart Lung Transplant"]
+    issn: ["1053-2498", "1557-3117"]
+    impact_factor: 8.9
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["PNAS", "Proceedings of the National Academy of Sciences of the United States of America", "Proc Natl Acad Sci U S A"]
+    issn: ["0027-8424", "1091-6490"]
+    impact_factor: 9.4
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Science Advances", "Sci Adv"]
+    issn: ["2375-2548"]
+    impact_factor: 11.7
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Science Translational Medicine", "Sci Transl Med"]
+    issn: ["1946-6234", "1946-6242"]
+    impact_factor: 15.8
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Cell Reports", "Cell Rep"]
+    issn: ["2211-1247"]
+    impact_factor: 7.5
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["eLife"]
+    issn: ["2050-084X"]
+    impact_factor: 6.4
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["EMBO Journal", "The EMBO Journal", "EMBO J"]
+    issn: ["0261-4189", "1460-2075"]
+    impact_factor: 9.4
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Journal of Experimental Medicine", "J Exp Med"]
+    issn: ["0022-1007", "1540-9538"]
+    impact_factor: 12.6
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Immunity"]
+    issn: ["1074-7613", "1097-4180"]
+    impact_factor: 25.5
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Mucosal Immunology"]
+    issn: ["1933-0219", "1935-3456"]
+    impact_factor: 7.6
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Matrix Biology"]
+    issn: ["0945-053X", "1569-1802"]
+    impact_factor: 8.2
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["FASEB Journal", "FASEB J"]
+    issn: ["0892-6638", "1530-6860"]
+    impact_factor: 4.4
+    jcr: "Q2"
+    source: carry_forward
+  - names: ["iScience"]
+    issn: ["2589-0042"]
+    impact_factor: 4.6
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Communications Biology", "Commun Biol"]
+    issn: ["2399-3642"]
+    impact_factor: 5.2
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["British Journal of Pharmacology", "Br J Pharmacol"]
+    issn: ["0007-1188", "1476-5381"]
+    impact_factor: 7.7
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Free Radical Biology and Medicine", "Free Radic Biol Med"]
+    issn: ["0891-5849", "1873-4596"]
+    impact_factor: 7.1
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Immunologic Research", "Immunol Res"]
+    issn: ["0257-277X", "1559-0755"]
+    impact_factor: 2.7
+    jcr: "Q3"
+    source: user_confirmed
+  - names: ["International Immunopharmacology", "Int Immunopharmacol"]
+    issn: ["1567-5769", "1878-1705"]
+    impact_factor: 4.8
+    jcr: "Q1"
+    source: carry_forward
+  - names: ["Journal of Thoracic Disease", "J Thorac Dis"]
+    issn: ["2072-1439", "2077-6624"]
+    impact_factor: 2.0
+    jcr: "Q3"
+    source: carry_forward
+  - names: ["COPD", "COPD-Journal of Chronic Obstructive Pulmonary Disease", "International Journal of Chronic Obstructive Pulmonary Disease"]
+    issn: ["1541-2555", "1541-2563", "1176-9106", "1178-2005"]
+    impact_factor: 2.7
+    jcr: "Q2"
+    source: carry_forward

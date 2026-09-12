@@ -1,0 +1,237 @@
+email:
+  to: doctorfhz@gmail.com
+  from_name: PulmoRadar
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  username_env: SMTP_USERNAME
+  password_env: SMTP_PASSWORD
+
+llm:
+  provider: deepseek
+  base_url: https://api.deepseek.com
+  model: deepseek-flash
+  api_key_env: DEEPSEEK_API_KEY
+  language: Chinese
+
+pubmed:
+  days_back: 90
+  retmax: 200
+  contact_email: doctorfhz@gmail.com
+  tool: pulmoradar
+  api_key_env: NCBI_API_KEY
+  date_field: edat
+
+windows:
+  days: [10, 30, 60, 90]
+  min_published_pool: 6
+  min_preprint_pool: 5
+
+selection:
+  published_n: 5
+  preprint_n: 3
+  screen_batch: 8
+  rank_shortlist: 10
+  fulltext_n: 12
+  max_screen: 40
+  quality_gate:
+    min_impact_factor: 5
+    max_cas_zone: 3
+    unknown_journal: reject
+    exclude_publishers:
+      - Frontiers
+      - MDPI
+      - Hindawi
+      - Bentham
+      - Scientific Research Publishing
+      - SCIRP
+      - OMICS
+
+exclude_publication_types:
+  - Review
+  - Systematic Review
+  - Editorial
+  - Comment
+  - Letter
+  - Case Reports
+  - Meta-Analysis
+  - Guideline
+  - Practice Guideline
+  - News
+  - Published Erratum
+  - Retracted Publication
+  - Retraction of Publication
+
+digest_groups:
+  monday:
+    name: 慢性肺病机制
+    weekday: monday
+    tracks:
+      - copd
+      - fibrosis
+    preprint_n: 3
+  thursday:
+    name: 肺动脉高压 / PAH · 流感肺损伤
+    weekday: thursday
+    tracks:
+      - pah
+      - influenza
+    preprint_n: 3
+
+topics:
+  copd:
+    name: COPD / 肺气肿机制
+    weekday: monday
+    published_n: 3
+    pubmed_query: >-
+      ("COPD"[Title/Abstract] OR "chronic obstructive pulmonary disease"[Title/Abstract]
+      OR emphysema[Title/Abstract] OR "alveolar destruction"[Title/Abstract]
+      OR "alveolar homeostasis"[Title/Abstract] OR "alveolar regeneration"[Title/Abstract]
+      OR "airspace enlargement"[Title/Abstract])
+    preprint_query: >-
+      (COPD OR "chronic obstructive pulmonary disease" OR emphysema
+      OR "alveolar destruction" OR "alveolar regeneration" OR "alveolar homeostasis")
+    focus: >-
+      Mechanistic COPD/emphysema: alveolar destruction, homeostasis, regeneration,
+      inflammatory cells driving alveolar damage; especially fibroblasts and immune cells.
+    boost_keywords:
+      - alveolar destruction
+      - alveolar regeneration
+      - alveolar homeostasis
+      - emphysema
+      - fibroblast
+      - myofibroblast
+      - macrophage
+      - neutrophil
+      - T cell
+      - lineage tracing
+      - elastase
+      - cigarette smoke
+  fibrosis:
+    name: 肺纤维化（成纤维细胞 / 免疫）
+    weekday: monday
+    published_n: 3
+    pubmed_query: >-
+      ("pulmonary fibrosis"[Title/Abstract] OR IPF[Title/Abstract]
+      OR "idiopathic pulmonary fibrosis"[Title/Abstract] OR "lung fibrosis"[Title/Abstract])
+      AND (fibroblast[Title/Abstract] OR myofibroblast[Title/Abstract]
+      OR macrophage[Title/Abstract] OR immune[Title/Abstract]
+      OR inflammation[Title/Abstract] OR "single-cell"[Title/Abstract])
+    preprint_query: >-
+      (("pulmonary fibrosis" OR IPF OR "idiopathic pulmonary fibrosis" OR "lung fibrosis")
+      AND (fibroblast OR myofibroblast OR macrophage OR immune))
+    focus: >-
+      Pulmonary fibrosis mechanistic work, especially fibroblasts, myofibroblasts,
+      and immune-stromal crosstalk in lung.
+    boost_keywords:
+      - fibroblast
+      - myofibroblast
+      - macrophage
+      - immune
+      - TGF-beta
+      - ECM
+      - bleomycin
+      - IPF
+  pah:
+    name: 肺动脉高压 / PAH
+    weekday: thursday
+    published_n: 3
+    pubmed_query: >-
+      ("pulmonary hypertension"[Title/Abstract] OR "pulmonary arterial hypertension"[Title/Abstract]
+      OR "PAH"[Title/Abstract] OR "group 3 pulmonary hypertension"[Title/Abstract]
+      OR "hypoxic pulmonary hypertension"[Title/Abstract]
+      OR "pulmonary vascular remodeling"[Title/Abstract])
+    preprint_query: >-
+      ("pulmonary hypertension" OR "pulmonary arterial hypertension" OR PAH
+      OR "group 3 pulmonary hypertension" OR "hypoxic pulmonary hypertension"
+      OR "pulmonary vascular remodeling")
+    focus: >-
+      Pulmonary hypertension / PAH original research. Prefer flagship journals
+      (Circulation, Circulation Research, EHJ, ERJ, AJRCCM) and strong titles
+      (ATVB, Hypertension, Nature Communications and similar).
+    preferred_journals:
+      - Circulation
+      - Circulation Research
+      - European Heart Journal
+      - European Respiratory Journal
+      - American Journal of Respiratory and Critical Care Medicine
+    extra_journals:
+      - Arteriosclerosis, Thrombosis, and Vascular Biology
+      - Hypertension
+      - Nature Communications
+      - Nature
+      - Science
+      - Cell
+      - JCI
+      - Cardiovascular Research
+    boost_keywords:
+      - pulmonary vascular remodeling
+      - endothelium
+      - PASMC
+      - fibroblast
+      - group 3
+      - hypoxia
+
+  influenza:
+    name: 流感病毒肺损伤（上皮 / 基底细胞 / 免疫）
+    weekday: thursday
+    published_n: 3
+    pubmed_query: >-
+      (influenza[Title/Abstract] OR "influenza A virus"[Title/Abstract]
+      OR H1N1[Title/Abstract] OR H5N1[Title/Abstract] OR H7N9[Title/Abstract])
+      AND (lung[Title/Abstract] OR pulmonary[Title/Abstract] OR respiratory[Title/Abstract])
+      AND (epithelial[Title/Abstract] OR "basal cell"[Title/Abstract]
+      OR immune[Title/Abstract] OR macrophage[Title/Abstract]
+      OR neutrophil[Title/Abstract] OR alveolar[Title/Abstract])
+    preprint_query: >-
+      (influenza OR "influenza A virus" OR H1N1 OR H5N1 OR H7N9)
+      AND (lung OR pulmonary OR respiratory)
+      AND (epithelial OR "basal cell" OR immune OR macrophage OR neutrophil OR alveolar)
+    focus: >-
+      Original basic research on influenza-virus injury in lung, especially epithelial cells,
+      airway basal cells, alveolar epithelial cells, macrophages, neutrophils, T cells,
+      innate immunity, tissue repair, and epithelial-immune crosstalk. Prefer mechanistic
+      studies with relevant viral models and clear lung injury or repair readouts.
+    boost_keywords:
+      - influenza A virus
+      - H1N1
+      - H5N1
+      - H7N9
+      - lung epithelial cell
+      - airway epithelial cell
+      - basal cell
+      - alveolar epithelial
+      - macrophage
+      - neutrophil
+      - T cell
+      - innate immunity
+      - epithelial repair
+      - tissue repair
+      - single-cell
+
+profile:
+  boost_keywords:
+    - fibroblast
+    - myofibroblast
+    - macrophage
+    - neutrophil
+    - immune
+    - alveolar destruction
+    - alveolar regeneration
+    - alveolar homeostasis
+    - endothelium
+    - PASMC
+    - vascular remodeling
+    - WIF1
+    - CITED2
+    - CXCL12
+    - single-cell
+    - lineage tracing
+  avoid_keywords:
+    - COVID-19
+    - SARS-CoV-2
+    - asthma
+    - lung cancer
+    - NSCLC
+    - sleep apnea
+    - OSA
+    - obstructive sleep

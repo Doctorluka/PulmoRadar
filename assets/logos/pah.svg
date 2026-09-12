@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280" role="img" aria-label="PulmoRadar PAH mark">
+  <title>PulmoRadar · PAH</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="#2367a6" stroke-width="8"
+          d="M100 102
+             C90 64 60 50 36 68
+             C14 86 10 124 16 162
+             C22 204 38 240 64 254
+             C84 264 102 252 108 228
+             C112 210 108 174 104 146
+             C102 124 106 110 100 102 Z"/>
+    <path stroke="#2367a6" stroke-width="8"
+          d="M140 102
+             C150 64 180 50 204 68
+             C226 86 230 124 224 162
+             C218 204 202 240 176 254
+             C156 264 138 252 132 228
+             C128 210 132 174 136 146
+             C138 124 134 110 140 102 Z"/>
+    <path stroke="#2367a6" stroke-width="10" d="M120 52 V94"/>
+    <circle cx="120" cy="32" r="5" fill="#c05640" stroke="none"/>
+    <circle cx="120" cy="32" r="12" fill="none" stroke="#c05640" stroke-width="2.8"/>
+    <path stroke="#c05640" stroke-width="6" d="M120 94 C104 114 82 132 62 148"/>
+    <path stroke="#c05640" stroke-width="6" d="M120 94 C136 114 158 132 178 148"/>
+    <path stroke="#c05640" stroke-width="4.2" d="M62 148 C48 166 40 188 42 210"/>
+    <path stroke="#c05640" stroke-width="4.2" d="M62 148 C78 168 86 190 82 214"/>
+    <path stroke="#c05640" stroke-width="4.2" d="M178 148 C192 166 200 188 198 210"/>
+    <path stroke="#c05640" stroke-width="4.2" d="M178 148 C162 168 154 190 158 214"/>
+  </g>
+</svg>

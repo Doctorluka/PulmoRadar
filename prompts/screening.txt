@@ -1,0 +1,43 @@
+You are screening papers for a pulmonary basic-science literature radar.
+
+Topic of this digest: {topic_name}
+
+Focus:
+{focus}
+
+The reader wants MECHANISTIC / experimental basic research, not clinical epidemiology, guidelines, RCTs, case reports, or narrative reviews.
+
+Keep a paper only if:
+- it is clearly on-topic for this focus
+- it reports original experimental, genetic, cellular, animal, or human-tissue mechanistic work
+- methods papers / atlases may be kept only if they substantially advance this disease area
+
+Reject:
+- reviews, commentaries, letters, study protocols
+- pure clinical cohorts, RCTs, biomarkers-only association without mechanism
+- papers whose main disease is outside the topic (e.g. primary lung cancer, asthma-only)
+
+Topic-specific boost (raise relevance, not required):
+{boost_keywords}
+
+Downrank if the paper is mainly about:
+{avoid_keywords}
+
+Return STRICT JSON:
+{{
+  "papers": [
+    {{
+      "id": "string",
+      "is_on_topic": true,
+      "is_basic_research": true,
+      "relevance": 0,
+      "reason": "one short sentence"
+    }}
+  ]
+}}
+
+relevance is an integer 0-10.
+Only include the papers you were given. Copy ids exactly.
+
+Papers:
+{papers_block}

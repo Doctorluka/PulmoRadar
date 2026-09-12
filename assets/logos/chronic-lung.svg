@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" width="240" height="280" role="img" aria-label="PulmoRadar Chronic Lung mark">
+  <title>PulmoRadar · Chronic Lung</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="#087c78" stroke-width="8"
+          d="M100 102
+             C90 64 60 50 36 68
+             C14 86 10 124 16 162
+             C22 204 38 240 64 254
+             C84 264 102 252 108 228
+             C112 210 108 174 104 146
+             C102 124 106 110 100 102 Z"/>
+    <path stroke="#087c78" stroke-width="8"
+          d="M140 102
+             C150 64 180 50 204 68
+             C226 86 230 124 224 162
+             C218 204 202 240 176 254
+             C156 264 138 252 132 228
+             C128 210 132 174 136 146
+             C138 124 134 110 140 102 Z"/>
+    <path stroke="#087c78" stroke-width="10" d="M120 48 V94"/>
+    <path stroke="#a9472c" stroke-width="3" d="M104 36 C110 24 130 24 136 36"/>
+    <path stroke="#a9472c" stroke-width="2.4" d="M96 28 C106 12 134 12 144 28"/>
+    <path stroke="#087c78" stroke-width="5" d="M120 94 C106 114 86 132 68 150"/>
+    <path stroke="#087c78" stroke-width="5" d="M120 94 C134 114 154 132 172 150"/>
+    <path stroke="#087c78" stroke-width="3.4" d="M68 150 C54 168 46 190 48 210"/>
+    <path stroke="#087c78" stroke-width="3.4" d="M68 150 C84 170 90 192 86 214"/>
+    <path stroke="#087c78" stroke-width="3.4" d="M172 150 C186 168 194 190 192 210"/>
+    <path stroke="#087c78" stroke-width="3.4" d="M172 150 C156 170 150 192 154 214"/>
+  </g>
+  <g fill="#ffffff" stroke="#a9472c" stroke-width="2.2">
+    <circle cx="52" cy="214" r="6"/>
+    <circle cx="70" cy="226" r="6.4"/>
+    <circle cx="88" cy="216" r="5.4"/>
+    <circle cx="188" cy="214" r="6"/>
+    <circle cx="170" cy="226" r="6.4"/>
+    <circle cx="152" cy="216" r="5.4"/>
+  </g>
+</svg>

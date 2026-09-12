@@ -48,6 +48,7 @@ def _authors(paper: Paper) -> str:
 
 
 _WRAP = "text-align:left !important;"
+_ABSTRACT_ALIGN = "text-align:justify !important;"
 _DOI_WRAP = "overflow-wrap:break-word;word-break:break-all;"
 
 
@@ -223,10 +224,16 @@ _ABSTRACT_LABEL_RE = re.compile(
 
 
 def _abstract_html(text: str) -> str:
-    escaped = _esc(text)
-    if not escaped:
+    raw = (text or "").replace("\r\n", "\n").replace("\r", "\n").strip()
+    if not raw:
         return ""
-    return _ABSTRACT_LABEL_RE.sub(r"<strong>\1</strong>", escaped)
+    parts = [part.strip() for part in re.split(r"\n+", raw) if part.strip()]
+    blocks: list[str] = []
+    for i, part in enumerate(parts):
+        body = _ABSTRACT_LABEL_RE.sub(r"<strong>\1</strong>", _esc(part))
+        bottom = "0" if i == len(parts) - 1 else "8px"
+        blocks.append(f'<p style="margin:0 0 {bottom};{_ABSTRACT_ALIGN}">{body}</p>')
+    return "".join(blocks)
 
 
 def _author_entries(paper: Paper) -> list[Author]:
@@ -502,7 +509,7 @@ def render_paper_html(paper: Paper, index: int, theme: dict[str, str] | None = N
     {_paper_meta_html(paper, theme)}
     {_editor_take_html(paper, theme)}
     {section}原文摘要 · ABSTRACT</p>
-    <div style="margin:0 0 16px;padding:12px 14px;background:{theme['module_bg']};border:1px solid {theme['module_border']};border-radius:8px;color:#111111;font-size:14px;line-height:1.7;white-space:pre-wrap;{_WRAP}">{_abstract_html(paper.abstract)}</div>
+    <div style="margin:0 0 16px;padding:12px 14px;background:{theme['module_bg']};border:1px solid {theme['module_border']};border-radius:8px;color:#111111;font-size:14px;line-height:1.7;">{_abstract_html(paper.abstract)}</div>
     {section}AI 解读 · 研究设计</p>
     <div style="color:#111111;font-size:14px;line-height:1.7;{_WRAP}">{_list(design if isinstance(design, list) else [str(design)])}</div>
     {section}AI 解读 · 主要发现</p>

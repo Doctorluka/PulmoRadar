@@ -11,6 +11,19 @@ from typing import Any
 from .renderer import LOGO_CID
 
 
+def _addresses(value: Any) -> list[str]:
+    if not value:
+        return []
+    if isinstance(value, str):
+        return [item.strip() for item in value.replace(";", ",").split(",") if item.strip()]
+    if isinstance(value, list):
+        out: list[str] = []
+        for item in value:
+            out.extend(_addresses(item))
+        return out
+    return [str(value).strip()] if str(value).strip() else []
+
+
 def build_message(
     cfg: dict[str, Any],
     subject: str,
@@ -18,13 +31,16 @@ def build_message(
     logo_path: Path | None = None,
 ) -> MIMEMultipart:
     email_cfg = cfg.get("email", {})
-    to_addr = email_cfg.get("to")
+    to_addrs = _addresses(email_cfg.get("to"))
+    cc_addrs = _addresses(email_cfg.get("cc"))
     user = os.environ.get(email_cfg.get("username_env", "SMTP_USERNAME"), "").strip()
     from_name = email_cfg.get("from_name", "PulmoRadar")
     msg = MIMEMultipart("related")
     msg["Subject"] = subject
     msg["From"] = f"{from_name} <{user}>"
-    msg["To"] = to_addr or ""
+    msg["To"] = ", ".join(to_addrs)
+    if cc_addrs:
+        msg["Cc"] = ", ".join(cc_addrs)
     alt = MIMEMultipart("alternative")
     alt.attach(MIMEText(html_body, "html", "utf-8"))
     msg.attach(alt)
@@ -44,10 +60,11 @@ def send_email(
     logo_path: Path | None = None,
 ) -> None:
     email_cfg = cfg.get("email", {})
-    to_addr = email_cfg.get("to")
+    to_addrs = _addresses(email_cfg.get("to"))
+    recipients = to_addrs + _addresses(email_cfg.get("cc"))
     user = os.environ.get(email_cfg.get("username_env", "SMTP_USERNAME"), "").strip()
     password = os.environ.get(email_cfg.get("password_env", "SMTP_PASSWORD"), "").replace(" ", "").strip()
-    if not to_addr:
+    if not to_addrs:
         raise RuntimeError("email.to is missing in config.yaml")
     if not user or not password:
         raise RuntimeError("SMTP_USERNAME / SMTP_PASSWORD are not set")
@@ -63,12 +80,12 @@ def send_email(
             if ssl:
                 with smtplib.SMTP_SSL(host_i, port_i, timeout=45) as smtp:
                     smtp.login(user, password)
-                    smtp.sendmail(user, [to_addr], msg.as_string())
+                    smtp.sendmail(user, recipients, msg.as_string())
             else:
                 with smtplib.SMTP(host_i, port_i, timeout=45) as smtp:
                     smtp.starttls()
                     smtp.login(user, password)
-                    smtp.sendmail(user, [to_addr], msg.as_string())
+                    smtp.sendmail(user, recipients, msg.as_string())
             return
         except Exception as exc:
             last_error = exc

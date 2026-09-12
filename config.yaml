@@ -1,5 +1,7 @@
 email:
   to: doctorfhz@gmail.com
+  cc:
+    - 3077267193@qq.com
   from_name: PulmoRadar
   smtp_host: smtp.gmail.com
   smtp_port: 587

@@ -203,6 +203,90 @@
       "is_preprint": true,
       "run_date": "2026-09-12",
       "recorded_at": "2026-09-12T11:53:42.247841+00:00"
+    },
+    {
+      "paper_id": "pmid:42698073",
+      "pmid": "42698073",
+      "doi": "10.1186/s12931-020-01486-x",
+      "preprint_id": "",
+      "title": "Current smoking and COPD are associated with differentiation-dependent secretory and inflammatory programs in airway basal cells.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-12",
+      "recorded_at": "2026-09-12T13:01:24.518949+00:00"
+    },
+    {
+      "paper_id": "pmid:42518202",
+      "pmid": "42518202",
+      "doi": "10.1093/ajrccm/aamag396",
+      "preprint_id": "",
+      "title": "ADAMTS14 is a Novel Modulator of Fibroblast Mechanoactivation in Pulmonary Fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-12",
+      "recorded_at": "2026-09-12T13:01:24.518949+00:00"
+    },
+    {
+      "paper_id": "pmid:42631393",
+      "pmid": "42631393",
+      "doi": "10.1152/ajplung.00168.2025",
+      "preprint_id": "",
+      "title": "Aberrant expression of the PREX2-MAGI2 axis modulates myofibroblast differentiation in pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-12",
+      "recorded_at": "2026-09-12T13:01:24.518949+00:00"
+    },
+    {
+      "paper_id": "pmid:42486432",
+      "pmid": "42486432",
+      "doi": "10.1016/j.mucimm.2026.100388",
+      "preprint_id": "",
+      "title": "Gammaherpesvirus infection impairs lung fibrosis resolution through PD-L1+ fibroblasts and PD-1+ CD8+ T cell interaction.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-12",
+      "recorded_at": "2026-09-12T13:01:24.518949+00:00"
+    },
+    {
+      "paper_id": "pmid:42538950",
+      "pmid": "42538950",
+      "doi": "10.64898/2026.07.21.738475",
+      "preprint_id": "",
+      "title": "Cell-Specific Modulation of the Aryl Hydrocarbon Receptor by Kynurenine in Pulmonary Fibrosis Requires Microenvironmental Crosstalk.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-12",
+      "recorded_at": "2026-09-12T13:01:24.518949+00:00"
+    },
+    {
+      "paper_id": "pmid:42619955",
+      "pmid": "42619955",
+      "doi": "10.64898/2026.08.02.742235",
+      "preprint_id": "",
+      "title": "Inflammatory Fibroblasts Promote Repair After Injury Through Epithelial Proliferation.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-12",
+      "recorded_at": "2026-09-12T13:01:24.518949+00:00"
+    },
+    {
+      "paper_id": "pmid:42465480",
+      "pmid": "42465480",
+      "doi": "10.64898/2026.07.09.737340",
+      "preprint_id": "",
+      "title": "Epithelial QKI Protects Against Emphysema by Maintaining Mitochondrial Integrity.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-12",
+      "recorded_at": "2026-09-12T13:01:24.518949+00:00"
     }
   ]
 }

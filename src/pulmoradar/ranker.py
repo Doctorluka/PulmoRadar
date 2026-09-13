@@ -6,55 +6,20 @@ from typing import Any
 
 from . import llm
 from .config import project_root
+from .dates import age_days
 from .filters import keyword_bonus
 from .models import Paper
 
 
-_MONTHS = {
-    "jan": 1,
-    "feb": 2,
-    "mar": 3,
-    "apr": 4,
-    "may": 5,
-    "jun": 6,
-    "jul": 7,
-    "aug": 8,
-    "sep": 9,
-    "oct": 10,
-    "nov": 11,
-    "dec": 12,
-}
-
-
 def recency_bonus(date_str: str, today: date | None = None) -> float:
-    today = today or date.today()
-    raw = (date_str or "").strip()
-    parsed = None
-    if raw:
-        iso = raw[:10]
-        try:
-            parsed = date.fromisoformat(iso)
-        except ValueError:
-            parts = raw.replace(",", " ").split()
-            if parts and parts[0].isdigit() and len(parts[0]) == 4:
-                year = int(parts[0])
-                month = 1
-                day = 1
-                if len(parts) >= 2:
-                    month = _MONTHS.get(parts[1][:3].lower(), 1)
-                if len(parts) >= 3 and parts[2].isdigit():
-                    day = int(parts[2])
-                try:
-                    parsed = date(year, month, day)
-                except ValueError:
-                    parsed = None
-    if parsed is None:
+    """Small tie-break only. Quality / slot rules decide selection."""
+    age = age_days(date_str, today)
+    if age is None:
         return 0.0
-    age = (today - parsed).days
     if age <= 14:
-        return 0.6
+        return 0.15
     if age <= 45:
-        return 0.3
+        return 0.05
     return 0.0
 
 
@@ -137,7 +102,7 @@ def rank(papers: list[Paper], topic_cfg: dict[str, Any], cfg: dict[str, Any]) ->
         fit = float(row.get("fit") or row.get("personal") or 0)
         bonus = keyword_bonus(paper, boost, avoid)
         jbonus = journal_mod.journal_bonus(paper, preferred, extra)
-        total = 0.32 * mech + 0.22 * methods + 0.18 * novelty + 0.18 * fit + 0.1 * bonus + jbonus
+        total = 0.34 * mech + 0.24 * methods + 0.2 * novelty + 0.16 * fit + 0.06 * bonus + jbonus
         recency = recency_bonus(paper.date)
         paper.scores.update(
             {

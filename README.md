@@ -4,20 +4,23 @@
 
 | 时间（北京） | 主题 | 已发表 | 预印本 |
 | --- | --- | --- | --- |
-| 周一 08:00 | 慢性肺病机制：COPD / 肺气肿 + 肺纤维化（成纤维细胞 / 免疫） | 各最多 3 篇 | 另加最多 3 篇 |
-| 周四 08:00 | 肺动脉高压 / PAH + 流感病毒肺损伤 | 各最多 3 篇 | 另加最多 3 篇 |
+| 周一 08:00 | 慢性肺病机制：COPD / 肺气肿 + 肺纤维化（成纤维细胞 / 免疫） | **各恰好 3 篇** | **恰好 3 篇** |
+| 周四 08:00 | 肺动脉高压 / PAH + 流感病毒肺损伤 | **各恰好 3 篇** | **恰好 3 篇** |
 
-预印本不占用已发表额度，也不显示 IF / 分区。检索窗按 **10 → 30 → 60 → 90 天** 放宽，直到候选池够用。已推送的 PMID / DOI 记在 `data/history.json`，不会重复入选。已发表与预印本都走 **NCBI PubMed / E-utilities**（预印本加 `preprint[pt]`）。
+每栏 3 篇是硬配额，凑不齐就失败、不发信。已发表三篇角色固定：**近一月高质量**、**年内旗舰系统研究**、**领域经典**。预印本只要 3 篇，不拆角色。已推送的 PMID / DOI 记在 `data/history.json`。已发表与预印本都走 **NCBI PubMed / E-utilities**（预印本加 `preprint[pt]`）。
 
 样刊：[`archive/2026-09-12-monday.html`](archive/2026-09-12-monday.html)、[`archive/2026-09-12-thursday.html`](archive/2026-09-12-thursday.html)。周四共用同一套 renderer，换蓝色 PAH 主题和对应 logo。
 
 ## 流水线
 
-1. **检索**：按 `config.yaml` 里各 track 的 query 拉 PubMed；窗口不够就沿梯子放宽。
-2. **硬过滤**：丢掉综述 / Editorial / Letter / Case Report 等；丢掉纯临床试验；丢掉已推送条目；丢掉 Frontiers、MDPI 等配置里的出版社。
-3. **质量门槛**（只对已发表）：本地期刊表里 **IF ≥ 5 或 中科院 2025 年 3 区及以上**（满足其一）。表外期刊默认不入选。预印本不套这道门。
-4. **选题与解读**：关键词 / 旗舰期刊加分 → DeepSeek screening / ranking → 补全文与 graphical abstract → 中文分析。
-5. **输出**：HTML 邮件 + `archive/{date}-{topic}.html` / `.md`。`--send` 才会发信并写入 history。
+1. **检索**：每个已发表 track 拉「近 1 年最新」+「约 20 年 relevance」两路 PubMed，合并去重。预印本仍按 10 → 30 → 60 → 90 天扩窗。
+2. **硬过滤**：丢掉综述 / Editorial / Letter / Case Report 等；丢掉纯临床试验；丢掉已推送条目；丢掉 Frontiers、MDPI 等出版社。
+3. **质量门槛**（只对已发表，满足其一即可）：**IF > 5**，或 **中科院 2025 大类 2 区及以上**，或 **新锐 2026 大类 2 区及以上**。表外期刊默认不入选。预印本不套这道门。
+4. **三槽选题**（质量优先，新近度只做近一月槽的排序）：
+   - 第 1 篇：近 30 天里最新的高质量论文；不够则回退 90 天，再回退到质量最高篇。
+   - 第 2 篇：近 1 年、CNS / 大子刊 / 领域旗舰上的系统机制研究；不够则回退到一年内高质量。
+   - 第 3 篇：领域或子方向奠基性论文，可超出常规时间窗。
+5. **输出**：HTML 邮件 + `archive/{date}-{topic}.html` / `.md`。`--send` 才会发信并写入 history。凑不齐 3 篇会 `QuotaError`。
 
 云端由 [GitHub Actions](.github/workflows/digest.yml) 在北京时间周一、周四 08:00（UTC 00:00）跑 `python -m pulmoradar run --topic … --send`，并把更新后的 history 与 archive 提交回仓库。
 
@@ -32,12 +35,14 @@
 
 ## 期刊指标
 
-邮件里的 IF / JCR / 中科院分区只读仓库内两张表，运行时不联网查询。
+邮件里的 IF / JCR / 中科院 / 新锐分区只读仓库内本地表，运行时不联网查询。
 
 | 表 | 含义 | 年份 | 文件 |
 | --- | --- | --- | --- |
 | JCR IF | Journal Impact Factor + Quartile | 2025（Clarivate 2026 年 6 月；LetPub 2026-06 核对） | [`data/jcr_if.yaml`](data/jcr_if.yaml) |
 | 中科院分区 | 升级版大类分区 | 2025 | [`data/cas_zone.yaml`](data/cas_zone.yaml) |
+| 新锐分区 | XinRui Journal Ranking 大类 | 2026 年 3 月 | [`data/xinyue_zone.yaml`](data/xinyue_zone.yaml) |
+| 期刊档 | CNS / 大子刊 / 旗舰，供年内槽使用 | — | [`data/journal_tiers.yaml`](data/journal_tiers.yaml) |
 
 表头 `year` / `retrieved` 必须与数据一致。`jcr_if.yaml` 里个别刊会标 `source:`：`letpub_2026_06`（已按 ISSN 核对）、`user_confirmed`（人工确认）、`carry_forward`（沿用上一版）。表里没有的刊显示「未收录」。
 

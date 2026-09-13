@@ -1,0 +1,37 @@
+# Slot-2 期刊档：CNS / 大子刊 / 领域旗舰。运行时不联网。
+cns:
+  - Nature
+  - Science
+  - Cell
+major:
+  - Nature Medicine
+  - Nature Immunology
+  - Nature Communications
+  - The Lancet Respiratory Medicine
+  - Lancet Respir Med
+  - The Journal of Clinical Investigation
+  - Journal of Clinical Investigation
+  - JCI
+  - Science Translational Medicine
+  - Science Advances
+  - Cell Reports
+  - Immunity
+  - Journal of Experimental Medicine
+  - The EMBO Journal
+  - EMBO Journal
+  - PNAS
+  - Proceedings of the National Academy of Sciences of the United States of America
+flagship:
+  - Circulation
+  - Circulation Research
+  - European Heart Journal
+  - European Respiratory Journal
+  - American Journal of Respiratory and Critical Care Medicine
+  - Arteriosclerosis, Thrombosis, and Vascular Biology
+  - ATVB
+  - Hypertension
+  - Cardiovascular Research
+  - Thorax
+  - Chest
+  - American Journal of Respiratory Cell and Molecular Biology
+  - Journal of Heart and Lung Transplantation

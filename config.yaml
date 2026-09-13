@@ -26,19 +26,25 @@ pubmed:
 
 windows:
   days: [10, 30, 60, 90]
+  recent_days: 30
+  flagship_days: 365
+  classic_days: 7300
   min_published_pool: 6
-  min_preprint_pool: 5
+  min_preprint_pool: 6
 
 selection:
-  published_n: 5
+  published_n: 3
   preprint_n: 3
+  hard_quota: true
   screen_batch: 8
   rank_shortlist: 10
   fulltext_n: 12
   max_screen: 40
   quality_gate:
     min_impact_factor: 5
-    max_cas_zone: 3
+    impact_factor_exclusive: true
+    max_cas_zone: 2
+    max_xinyue_zone: 2
     unknown_journal: reject
     exclude_publishers:
       - Frontiers

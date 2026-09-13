@@ -71,12 +71,10 @@ def search_ids(
     cfg: dict[str, Any],
     client: httpx.Client | None = None,
     days: int | None = None,
+    sort: str | None = None,
 ) -> list[str]:
     pubmed = cfg.get("pubmed", {})
-    days = int(days if days is not None else pubmed.get("days_back", 90))
     date_field = pubmed.get("date_field", "edat")
-    mindate = (date.today() - timedelta(days=days)).strftime("%Y/%m/%d")
-    maxdate = date.today().strftime("%Y/%m/%d")
     own = client is None
     client = client or httpx.Client(timeout=45.0)
     try:
@@ -88,12 +86,16 @@ def search_ids(
                     "db": "pubmed",
                     "term": query,
                     "retmax": str(pubmed.get("retmax", 200)),
-                    "datetype": date_field,
-                    "mindate": mindate,
-                    "maxdate": maxdate,
                     "usehistory": "n",
                 }
             )
+            if days is not None:
+                span = int(days)
+                params["datetype"] = date_field
+                params["mindate"] = (date.today() - timedelta(days=span)).strftime("%Y/%m/%d")
+                params["maxdate"] = date.today().strftime("%Y/%m/%d")
+            if sort:
+                params["sort"] = sort
             r = client.get(f"{EUTILS}/esearch.fcgi", params=params)
             body = r.text[:400]
             if r.status_code >= 400:
@@ -342,9 +344,10 @@ def fetch_pubmed(
     days: int | None = None,
     client: httpx.Client | None = None,
     preprint: bool = False,
+    sort: str | None = None,
 ) -> list[Paper]:
     query = scoped_query(topic_cfg["pubmed_query"], preprint)
-    ids = search_ids(query, cfg, client=client, days=days)
+    ids = search_ids(query, cfg, client=client, days=days, sort=sort)
     papers = fetch_details(ids, cfg, client=client)
     if preprint:
         kept = []

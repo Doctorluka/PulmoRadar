@@ -5,6 +5,8 @@ Topic: {topic_name}
 Focus:
 {focus}
 
+Quality outranks recency. A stronger mechanistic paper should beat a weaker but newer one.
+
 Score each paper 0-10 on:
 - mechanism: genetic/pharmacologic intervention, rescue, causal chain (not just correlation)
 - methods: experimental rigor (cell-specific KO, disease model, orthogonal assays, human tissue)

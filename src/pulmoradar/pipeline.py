@@ -4,14 +4,15 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from . import fulltext, history, journals, ranker
+from . import history, journals
 from .config import project_root
 from .emailer import send_email
-from .filters import deterministic_filter, keyword_bonus
+from .filters import deterministic_filter
 from .models import Paper
 from .preprints import fetch_preprints
 from .pubmed import fetch_pubmed
 from .renderer import embed_logo_data_uri, logo_asset, render_email, render_markdown
+from .slots import enrich_chosen, select_preprint_quota, select_published_slots, window_days
 from .windows import expand_until, ladder_days, min_pool
 
 
@@ -27,25 +28,6 @@ def _tag_cross(papers: list[Paper], topic_key: str) -> None:
         if any(h in blob for h in hints):
             if label not in paper.also_topics:
                 paper.also_topics.append(label)
-
-
-def _select(papers: list[Paper], n: int) -> list[Paper]:
-    return papers[:n]
-
-
-def _heuristic_rank(papers: list[Paper], cfg: dict[str, Any], topic_cfg: dict[str, Any] | None = None) -> list[Paper]:
-    profile = cfg.get("profile", {})
-    boost = list(topic_cfg.get("boost_keywords", []) if topic_cfg else []) + list(profile.get("boost_keywords", []))
-    avoid = profile.get("avoid_keywords", [])
-    preferred = list((topic_cfg or {}).get("preferred_journals", []))
-    extra = list((topic_cfg or {}).get("extra_journals", []))
-    for paper in papers:
-        bonus = keyword_bonus(paper, boost, avoid)
-        jbonus = journals.journal_bonus(paper, preferred, extra)
-        paper.scores["total"] = float(paper.scores.get("screen", 0) or 0) + bonus + jbonus
-        paper.scores["journal_bonus"] = jbonus
-    papers.sort(key=lambda p: float(p.scores.get("total") or 0), reverse=True)
-    return papers
 
 
 def _quality_gate_for(cfg: dict[str, Any], topic_cfg: dict[str, Any] | None) -> dict[str, Any] | None:
@@ -72,33 +54,17 @@ def _prepare_pool(
     return filtered
 
 
-def _llm_select(
-    papers: list[Paper],
-    topic_cfg: dict[str, Any],
-    cfg: dict[str, Any],
-    n: int,
-    dry_run: bool,
-) -> list[Paper]:
-    if not papers or n <= 0:
-        return []
-    shortlist_n = max(n, int(cfg.get("selection", {}).get("rank_shortlist", 12)))
-    cap = int(cfg.get("selection", {}).get("max_screen", 40))
-    papers = _heuristic_rank(list(papers), cfg, topic_cfg)[:cap]
-    if dry_run:
-        chosen = _select(papers, n)
-    else:
-        screened = ranker.screen(papers, topic_cfg, cfg)
-        if not screened:
-            ranked = _heuristic_rank(papers, cfg, topic_cfg)
-            chosen = _select(ranked, n)
-        else:
-            ranked = ranker.rank(screened[:shortlist_n], topic_cfg, cfg)
-            chosen = _select(ranked, n)
-        fulltext.enrich(chosen)
-        for paper in chosen:
-            ranker.analyze_one(paper, cfg)
-    journals.enrich(chosen)
-    return chosen
+def _merge_unique(batches: list[list[Paper]]) -> list[Paper]:
+    seen: set[str] = set()
+    out: list[Paper] = []
+    for batch in batches:
+        for paper in batch:
+            key = (paper.paper_id or paper.doi or paper.pmid).lower()
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            out.append(paper)
+    return out
 
 
 def _collect_track(
@@ -118,17 +84,22 @@ def _collect_track(
         pool = _prepare_pool(injected, cfg, seen, topic_key, gate_cfg)
         notes.append(f"{label} 原始 {len(injected)} 篇，过滤后 {len(pool)} 篇。")
         return pool
-    fetch = (
-        (lambda d, t=topic_cfg: fetch_pubmed(t, cfg, days=d))
-        if kind == "PubMed"
-        else (lambda d, t=topic_cfg: fetch_preprints(t, cfg, days=d))
-    )
-    min_kind = "published" if kind == "PubMed" else "preprint"
+    if kind == "PubMed":
+        spans = window_days(cfg)
+        year_raw = fetch_pubmed(topic_cfg, cfg, days=spans["flagship_year"])
+        classic_raw = fetch_pubmed(topic_cfg, cfg, days=spans["classic"], sort="relevance")
+        merged = _merge_unique([year_raw, classic_raw])
+        pool = _prepare_pool(merged, cfg, seen, topic_key, gate_cfg)
+        notes.append(
+            f"{label} 年内 {len(year_raw)} 篇 + 经典窗 {len(classic_raw)} 篇，"
+            f"合并 {len(merged)} 篇，过滤后 {len(pool)} 篇。"
+        )
+        return pool
     pool, _raw, used_days, step_notes = expand_until(
-        fetch=fetch,
+        fetch=lambda d, t=topic_cfg: fetch_preprints(t, cfg, days=d),
         prepare=lambda raw, k=topic_key, t=gate_cfg: _prepare_pool(raw, cfg, seen, k, t),
         windows=days_ladder,
-        min_n=min_pool(cfg, min_kind),
+        min_n=min_pool(cfg, "preprint"),
         label=label,
     )
     notes.extend(step_notes)
@@ -183,7 +154,17 @@ def run_topic(
             pub_injected = published
         pub_pool = _collect_track(key, topic_cfg, cfg, seen, days_ladder, notes, pub_injected, "PubMed")
         n_pub = int(topic_cfg.get("published_n", cfg.get("selection", {}).get("published_n", 3)))
-        chosen = _llm_select(pub_pool, topic_cfg, cfg, n_pub, dry_run)
+        if n_pub != 3:
+            notes.append(f"{topic_cfg['name']} published_n={n_pub} 已按硬配额 3 执行。")
+        chosen = select_published_slots(
+            pub_pool,
+            topic_cfg,
+            cfg,
+            today=run_date,
+            dry_run=dry_run,
+            label=topic_cfg["name"],
+        )
+        enrich_chosen(chosen, cfg, dry_run)
         chosen_sections.append((topic_cfg["name"], chosen))
 
         pre_injected = None
@@ -212,7 +193,15 @@ def run_topic(
             "focus": " ; ".join(topics[k].get("focus", "") for k in track_keys),
             "boost_keywords": [kw for k in track_keys for kw in topics[k].get("boost_keywords", [])],
         }
-    chosen_pre = _llm_select(unique_pre, pre_cfg, cfg, n_pre, dry_run)
+    chosen_pre = select_preprint_quota(
+        unique_pre,
+        pre_cfg,
+        cfg,
+        n=n_pre,
+        dry_run=dry_run,
+        label=group_name,
+    )
+    enrich_chosen(chosen_pre, cfg, dry_run)
 
     chosen_pub = [p for _, papers in chosen_sections for p in papers]
     subject, html = render_email(

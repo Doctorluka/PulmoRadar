@@ -40,6 +40,7 @@ class Paper:
     journal_metrics: dict[str, Any] = field(default_factory=dict)
     scores: dict[str, Any] = field(default_factory=dict)
     analysis: dict[str, Any] = field(default_factory=dict)
+    slot: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

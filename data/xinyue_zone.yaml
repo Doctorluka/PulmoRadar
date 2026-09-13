@@ -1,139 +1,184 @@
-# 本地固定表：中科院文献情报中心期刊分区（2025 升级版大类）
-# 与 data/xinyue_zone.yaml（新锐分区 2026）不是同一张表。
+# 本地固定表：新锐期刊分区表（XinRui Journal Ranking）大类分区
+# 与中科院 2025 升级版不是同一张表。中科院分区自 2026 年起停更；
+# 新锐分区由新锐学术于 2026 年 3 月发布，方法沿用超越指数，覆盖面更宽。
 # 运行时不联网。year = 分区表版本年。
-year: 2025
-source: "CAS 2025 upgraded journal ranking (大类)"
-retrieved: "2026-09-12"
+year: 2026
+source: "XinRui Journal Ranking, March 2026 (大类)"
+retrieved: "2026-09-13"
 journals:
   - names: ["Circulation"]
     issn: ["0009-7322", "1524-4539"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Circulation Research"]
     issn: ["0009-7330", "1524-4571"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["European Heart Journal", "Eur Heart J"]
     issn: ["0195-668X", "1522-9645"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["European Respiratory Journal", "Eur Respir J"]
     issn: ["0903-1936", "1399-3003"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["American Journal of Respiratory and Critical Care Medicine", "Am J Respir Crit Care Med"]
     issn: ["1073-449X", "1535-4970"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Arteriosclerosis, Thrombosis, and Vascular Biology", "Arterioscler Thromb Vasc Biol", "ATVB"]
     issn: ["1079-5642", "1524-4636"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Hypertension"]
     issn: ["0194-911X", "1524-4563"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Nature Communications", "Nat Commun"]
     issn: ["2041-1723"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Nature"]
     issn: ["0028-0836", "1476-4687"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Science"]
     issn: ["0036-8075", "1095-9203"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Cell"]
     issn: ["0092-8674", "1097-4172"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Nature Medicine", "Nat Med"]
     issn: ["1078-8956", "1546-170X"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Nature Immunology", "Nat Immunol"]
     issn: ["1529-2908", "1529-2916"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["The Lancet Respiratory Medicine", "Lancet Respir Med"]
     issn: ["2213-2600", "2213-2619"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["The Journal of Clinical Investigation", "Journal of Clinical Investigation", "J Clin Invest"]
     issn: ["0021-9738", "1558-8238"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["JCI Insight"]
     issn: ["2379-3708"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["Cardiovascular Research", "Cardiovasc Res"]
     issn: ["0008-6363", "1755-3245"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Thorax"]
     issn: ["0040-6376", "1468-3296"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Chest"]
     issn: ["0012-3692", "1931-3543"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["American Journal of Respiratory Cell and Molecular Biology", "Am J Respir Cell Mol Biol"]
     issn: ["1044-1549", "1535-4989"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["European Respiratory Review", "Eur Respir Rev"]
     issn: ["0905-9180", "1600-0617"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["Respiratory Research", "Respir Res"]
     issn: ["1465-9921", "1465-993X"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["American Journal of Physiology. Lung Cellular and Molecular Physiology", "American Journal of Physiology-Lung Cellular and Molecular Physiology", "Am J Physiol Lung Cell Mol Physiol"]
     issn: ["1040-0605", "1522-1504"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["Pulmonary Circulation"]
     issn: ["2045-8932", "2045-8940"]
-    cas: "3区"
+    xinyue: "3区"
+    source: aligned_cas_2025
   - names: ["Journal of Heart and Lung Transplantation", "J Heart Lung Transplant"]
     issn: ["1053-2498", "1557-3117"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["PNAS", "Proceedings of the National Academy of Sciences of the United States of America", "Proc Natl Acad Sci U S A"]
     issn: ["0027-8424", "1091-6490"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Science Advances", "Sci Adv"]
     issn: ["2375-2548"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Science Translational Medicine", "Sci Transl Med"]
     issn: ["1946-6234", "1946-6242"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Cell Reports", "Cell Rep"]
     issn: ["2211-1247"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["eLife"]
     issn: ["2050-084X"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["EMBO Journal", "The EMBO Journal", "EMBO J"]
     issn: ["0261-4189", "1460-2075"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Journal of Experimental Medicine", "J Exp Med"]
     issn: ["0022-1007", "1540-9538"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Immunity"]
     issn: ["1074-7613", "1097-4180"]
-    cas: "1区"
+    xinyue: "1区"
+    source: xinyue_2026_03
   - names: ["Mucosal Immunology"]
     issn: ["1933-0219", "1935-3456"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["Matrix Biology"]
     issn: ["0945-053X", "1569-1802"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["FASEB Journal", "FASEB J"]
     issn: ["0892-6638", "1530-6860"]
-    cas: "2区"
+    xinyue: "2区"
+    source: aligned_cas_2025
   - names: ["iScience"]
     issn: ["2589-0042"]
-    cas: "2区"
+    xinyue: "2区"
+    source: aligned_cas_2025
   - names: ["Communications Biology", "Commun Biol"]
     issn: ["2399-3642"]
-    cas: "2区"
+    xinyue: "2区"
+    source: aligned_cas_2025
   - names: ["British Journal of Pharmacology", "Br J Pharmacol"]
     issn: ["0007-1188", "1476-5381"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["Free Radical Biology and Medicine", "Free Radic Biol Med"]
     issn: ["0891-5849", "1873-4596"]
-    cas: "2区"
+    xinyue: "2区"
+    source: xinyue_2026_03
   - names: ["Immunologic Research", "Immunol Res"]
     issn: ["0257-277X", "1559-0755"]
-    cas: "4区"
+    xinyue: "4区"
+    source: aligned_cas_2025
   - names: ["International Immunopharmacology", "Int Immunopharmacol"]
     issn: ["1567-5769", "1878-1705"]
-    cas: "2区"
+    xinyue: "2区"
+    source: aligned_cas_2025
   - names: ["Journal of Thoracic Disease", "J Thorac Dis"]
     issn: ["2072-1439", "2077-6624"]
-    cas: "4区"
+    xinyue: "4区"
+    source: aligned_cas_2025
   - names: ["COPD", "COPD-Journal of Chronic Obstructive Pulmonary Disease", "International Journal of Chronic Obstructive Pulmonary Disease"]
     issn: ["1541-2555", "1541-2563", "1176-9106", "1178-2005"]
-    cas: "3区"
+    xinyue: "3区"
+    source: aligned_cas_2025

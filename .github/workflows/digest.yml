@@ -2,9 +2,11 @@ name: weekly digest
 
 on:
   schedule:
-    # Beijing Monday/Thursday 08:00 = UTC 00:00
-    - cron: "0 0 * * 1"
-    - cron: "0 0 * * 4"
+    # Beijing Monday/Thursday 08:17 = UTC 00:17.
+    # Kept off the hour: GitHub's scheduled queue is heavily oversubscribed at :00
+    # and runs there are often delayed by hours or dropped entirely.
+    - cron: "17 0 * * 1"
+    - cron: "17 0 * * 4"
   workflow_dispatch:
     inputs:
       topic:
@@ -36,8 +38,17 @@ jobs:
         id: topic
         run: |
           INPUT="${{ github.event.inputs.topic }}"
+          CRON="${{ github.event.schedule }}"
           if [ "$INPUT" = "monday" ] || [ "$INPUT" = "thursday" ]; then
             TOPIC="$INPUT"
+          elif [ -n "$CRON" ]; then
+            # Derive from the cron that fired, so shifting the trigger across the
+            # UTC date boundary cannot flip the topic.
+            case "$CRON" in
+              "17 0 * * 1") TOPIC=monday ;;
+              "17 0 * * 4") TOPIC=thursday ;;
+              *) echo "Unhandled schedule: $CRON" >&2; exit 1 ;;
+            esac
           else
             DOW=$(date -u +%u)
             if [ "$DOW" = "4" ]; then TOPIC=thursday; else TOPIC=monday; fi
@@ -76,3 +87,31 @@ jobs:
             git commit -m "chore: record ${{ steps.topic.outputs.topic }} digest"
             git push
           fi
+
+      - name: Notify on failure
+        if: failure()
+        continue-on-error: true
+        env:
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          TOPIC: ${{ steps.topic.outputs.topic }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python - <<'PY'
+          import os
+
+          from pulmoradar.config import load_config
+          from pulmoradar.emailer import send_email
+
+          cfg = load_config(None)
+          # Alert only the primary recipient, not the digest CC list.
+          cfg.setdefault("email", {})["cc"] = []
+          topic = os.environ.get("TOPIC") or "unknown"
+          run_url = os.environ["RUN_URL"]
+          send_email(
+              cfg,
+              f"PulmoRadar Actions 运行失败 · {topic}",
+              f'<p>本次 {topic} 周报的 workflow 失败了，请查看 '
+              f'<a href="{run_url}">运行日志</a>。</p>',
+          )
+          PY

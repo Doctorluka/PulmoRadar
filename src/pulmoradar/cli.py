@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 
 from .config import load_config, project_root
+from .emailer import send_email
 from .pipeline import run_topic
 
 
@@ -37,8 +38,6 @@ def main(argv: list[str] | None = None) -> int:
     except Exception as exc:
         if args.send and not args.dry_run:
             try:
-                from .emailer import send_email
-
                 send_email(
                     cfg,
                     f"PulmoRadar 运行失败 · {args.topic}",

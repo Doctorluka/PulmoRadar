@@ -2,11 +2,12 @@ name: weekly digest
 
 on:
   schedule:
-    # Beijing Monday/Thursday 08:17 = UTC 00:17.
-    # Kept off the hour: GitHub's scheduled queue is heavily oversubscribed at :00
-    # and runs there are often delayed by hours or dropped entirely.
-    - cron: "17 0 * * 1"
-    - cron: "17 0 * * 4"
+    # Beijing Monday/Thursday 06:43 = UTC Sunday/Wednesday 22:43 (note the day shift).
+    # Deliberately off the hour and outside 00:00-01:00 UTC: GitHub's scheduled queue
+    # is heavily oversubscribed there and runs get delayed by hours or dropped.
+    # The ~1h buffer before 08:00 Beijing absorbs the remaining queue delay.
+    - cron: "43 22 * * 0"
+    - cron: "43 22 * * 3"
   workflow_dispatch:
     inputs:
       topic:
@@ -45,8 +46,8 @@ jobs:
             # Derive from the cron that fired, so shifting the trigger across the
             # UTC date boundary cannot flip the topic.
             case "$CRON" in
-              "17 0 * * 1") TOPIC=monday ;;
-              "17 0 * * 4") TOPIC=thursday ;;
+              "43 22 * * 0") TOPIC=monday ;;
+              "43 22 * * 3") TOPIC=thursday ;;
               *) echo "Unhandled schedule: $CRON" >&2; exit 1 ;;
             esac
           else

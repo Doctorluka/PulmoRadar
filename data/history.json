@@ -1,3 +1,112 @@
 {
-  "items": []
+  "items": [
+    {
+      "paper_id": "pmid:42727368",
+      "pmid": "42727368",
+      "doi": "10.1016/j.intimp.2026.117380",
+      "preprint_id": "",
+      "title": "Resveratrol attenuates LPS/CSE-induced macrophage ferroptosis through activation of the Nrf2-ferroportin axis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:42067211",
+      "pmid": "42067211",
+      "doi": "10.1183/13993003.02323-2025",
+      "preprint_id": "",
+      "title": "Lung-Targeted HGF mRNA Restores Alveolar Structure in Experimental Emphysema.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:40920982",
+      "pmid": "40920982",
+      "doi": "10.1165/rcmb.2024-0541OC",
+      "preprint_id": "",
+      "title": "SREBP-mediated Signaling Restores Stem Cell Niche Properties in Human Lung Fibroblasts.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:42722423",
+      "pmid": "42722423",
+      "doi": "10.1136/thorax-2026-225147",
+      "preprint_id": "",
+      "title": "Markers of microvascular instability predict severity and survival in idiopathic pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:42677834",
+      "pmid": "42677834",
+      "doi": "10.1093/nar/gky1106",
+      "preprint_id": "",
+      "title": "Mechanosensitive phosphorylation of NFATC4 at S213/S217 drives fibroblast-to-myofibroblast transition and fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:40875483",
+      "pmid": "40875483",
+      "doi": "10.1038/nbt.3192",
+      "preprint_id": "",
+      "title": "Myeloid-mesenchymal crosstalk drives ARG1-dependent profibrotic metabolism via ornithine in lung fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:42523419",
+      "pmid": "42523419",
+      "doi": "10.64898/2026.05.28.728065",
+      "preprint_id": "",
+      "title": "Alveolar Epithelial Cell Loss of the Mitochondrial Regulator TFAM Drives Progressive Lung Fibrosis.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:42523460",
+      "pmid": "42523460",
+      "doi": "10.1021/ac60228a014",
+      "preprint_id": "",
+      "title": "Adenine nucleotide translocase 2 (ANT2) deficiency reprograms ferroptosis in alveolar progenitor cells to promote emphysema.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:42465480",
+      "pmid": "42465480",
+      "doi": "10.64898/2026.07.09.737340",
+      "preprint_id": "",
+      "title": "Epithelial QKI Protects Against Emphysema by Maintaining Mitochondrial Integrity.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-14",
+      "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    }
+  ]
 }

@@ -4,12 +4,12 @@
 
 | 时间（北京） | 主题 | 已发表 | 预印本 |
 | --- | --- | --- | --- |
-| 周一 08:00 | 慢性肺病机制：COPD / 肺气肿 + 肺纤维化（成纤维细胞 / 免疫） | **各恰好 3 篇** | **恰好 3 篇** |
-| 周四 08:00 | 肺动脉高压 / PAH + 流感病毒肺损伤 | **各恰好 3 篇** | **恰好 3 篇** |
+| 周一 06:43 | 慢性肺病机制：COPD / 肺气肿 + 肺纤维化（成纤维细胞 / 免疫） | **各恰好 3 篇** | **恰好 3 篇** |
+| 周四 06:43 | 肺动脉高压 / PAH + 流感病毒肺损伤 | **各恰好 3 篇** | **恰好 3 篇** |
 
 每栏 3 篇是硬配额，凑不齐就失败、不发信。已发表三篇角色固定：**近一月高质量**、**年内旗舰系统研究**、**领域经典**。预印本只要 3 篇，不拆角色。已推送的 PMID / DOI 记在 `data/history.json`。已发表与预印本都走 **NCBI PubMed / E-utilities**（预印本加 `preprint[pt]`）。
 
-样刊：[`archive/2026-09-12-monday.html`](archive/2026-09-12-monday.html)、[`archive/2026-09-12-thursday.html`](archive/2026-09-12-thursday.html)。周四共用同一套 renderer，换蓝色 PAH 主题和对应 logo。
+样刊：[`archive/2026-09-14-monday.html`](archive/2026-09-14-monday.html)、[`archive/2026-09-13-thursday.html`](archive/2026-09-13-thursday.html)。周四共用同一套 renderer，换蓝色 PAH 主题和对应 logo。
 
 ## 流水线
 
@@ -22,7 +22,7 @@
    - 第 3 篇：领域或子方向奠基性论文，可超出常规时间窗。
 5. **输出**：HTML 邮件 + `archive/{date}-{topic}.html` / `.md`。`--send` 才会发信并写入 history。凑不齐 3 篇会 `QuotaError`。
 
-云端由 [GitHub Actions](.github/workflows/digest.yml) 在北京时间周一、周四 08:00（UTC 00:00）跑 `python -m pulmoradar run --topic … --send`，并把更新后的 history 与 archive 提交回仓库。
+云端由 [GitHub Actions](.github/workflows/digest.yml) 在北京时间周一、周四 06:43（UTC 前一日 22:43）跑 `python -m pulmoradar run --topic … --send`，并把更新后的 history 与 archive 提交回仓库。
 
 ## 选题口径
 
@@ -78,4 +78,14 @@ python -m pulmoradar run --topic monday --send
 
 ## GitHub Actions
 
-仓库 Secrets 与本地 `.env` 同名：`DEEPSEEK_API_KEY`、`SMTP_USERNAME`、`SMTP_PASSWORD`、可选 `NCBI_API_KEY`。Actions 页可手动选 `monday` / `thursday` 跑一期。
+仓库 Secrets 与本地 `.env` 同名：`DEEPSEEK_API_KEY`、`SMTP_USERNAME`、`SMTP_PASSWORD`、可选 `NCBI_API_KEY`。Actions 页可手动选 `monday` / `thursday` 跑一期，命令行等价于：
+
+```bash
+gh workflow run digest.yml --ref main -f topic=monday
+```
+
+**调度时间不要改回整点。** cron 定在 `43 22 * * 0` / `43 22 * * 3`，即 UTC 周日 / 周三 22:43。GitHub 的 `schedule` 是 best-effort 队列，整点尤其是 `00:00 UTC`（UTC 日界线，全球每日任务都堆在那里）严重超额，运行常延迟数小时甚至直接丢弃——本项目就因此漏过整周。现在的时间点既避开整点也避开该时段，并给北京 08:00 留出约 1 小时缓冲吸收残余延迟。
+
+因为 UTC 22:43 落在北京时间的前一天，cron 的星期字段是 `0` / `3` 而不是 `1` / `4`。`Choose topic` 因此改为读 `github.event.schedule` 判断主题，而非用 `date -u +%u` 猜星期；改动触发时间时，`on.schedule` 与 `case` 分支里的 cron 字符串必须同步修改。
+
+任一步骤失败时，`Notify on failure` 会单独发一封告警邮件（只发 `email.to`，不含 CC），覆盖 `cli.py` 内部通知管不到的场景：依赖安装失败、Secrets 缺失、job 被取消或超时。若连 SMTP 都不可用，兜底靠 GitHub 自带的 workflow 失败通知邮件。

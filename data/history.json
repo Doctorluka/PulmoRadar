@@ -107,6 +107,114 @@
       "is_preprint": true,
       "run_date": "2026-09-14",
       "recorded_at": "2026-09-14T01:43:37.815899+00:00"
+    },
+    {
+      "paper_id": "pmid:42717866",
+      "pmid": "42717866",
+      "doi": "10.1161/ATVBAHA.126.325390",
+      "preprint_id": "",
+      "title": "Sexually Dimorphic Role of Estrogen Receptor α in Preserving Right Ventricular Endothelial Integrity.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:42532545",
+      "pmid": "42532545",
+      "doi": "10.1183/13993003.02146-2025",
+      "preprint_id": "",
+      "title": "Paracrine action of bone morphogenetic protein 3 in pulmonary arterial hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:38557054",
+      "pmid": "38557054",
+      "doi": "10.1161/CIRCULATIONAHA.120.048191",
+      "preprint_id": "",
+      "title": "BRCC3 Regulation of ALK2 in Vascular Smooth Muscle Cells: Implication in Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:42747347",
+      "pmid": "42747347",
+      "doi": "10.1152/ajplung.00265.2025",
+      "preprint_id": "",
+      "title": "Immunomodulation of the Innate Host Response by Mesenchymal-Derived Versican during Influenza A Virus Infection.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:41252214",
+      "pmid": "41252214",
+      "doi": "10.4049/jimmunol.168.3.1356",
+      "preprint_id": "",
+      "title": "TNF superfamily member 14 drives post-influenza depletion of alveolar macrophages, enabling secondary pneumococcal pneumonia.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:38167746",
+      "pmid": "38167746",
+      "doi": "10.1089/omi.2011.0118",
+      "preprint_id": "",
+      "title": "Alveolar macrophage-expressed Plet1 is a driver of lung epithelial repair after viral pneumonia.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:42619958",
+      "pmid": "42619958",
+      "doi": "10.64898/2026.07.28.741214",
+      "preprint_id": "",
+      "title": "A Bioactive Phospholipid Promotes Rapid Lung Progenitor Activation via AP-1.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:42619871",
+      "pmid": "42619871",
+      "doi": "10.64898/2026.07.29.741640",
+      "preprint_id": "",
+      "title": "CD133 + progenitor cells promote pulmonary hypertension through CXCR4 signaling.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:42539088",
+      "pmid": "42539088",
+      "doi": "10.1038/s41587-019-0336-3",
+      "preprint_id": "",
+      "title": "Poly-Pharmacologic Disruption of the Proliferative-to-Mesenchymal Fate Branch Point Reverses EndMT and Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "preprint",
+      "is_preprint": true,
+      "run_date": "2026-09-17",
+      "recorded_at": "2026-09-17T00:59:30.255080+00:00"
     }
   ]
 }

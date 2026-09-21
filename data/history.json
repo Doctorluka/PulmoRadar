@@ -215,6 +215,114 @@
       "is_preprint": true,
       "run_date": "2026-09-17",
       "recorded_at": "2026-09-17T00:59:30.255080+00:00"
+    },
+    {
+      "paper_id": "pmid:42760129",
+      "pmid": "42760129",
+      "doi": "10.1136/thorax-2026-225173",
+      "preprint_id": "",
+      "title": "Generational changes in lung function in adults from several world regions: results from the Burden of Obstructive Lung Disease study.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:42745457",
+      "pmid": "42745457",
+      "doi": "10.1093/ajrcmb/aanag179",
+      "preprint_id": "",
+      "title": "Interrogation of functional variants in COPD GWAS loci by massively parallel reporter assays.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:34287647",
+      "pmid": "34287647",
+      "doi": "10.1093/gigascience/giz022",
+      "preprint_id": "",
+      "title": "Reversal of emphysema by restoration of pulmonary endothelial cells.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:42759355",
+      "pmid": "42759355",
+      "doi": "10.1016/j.intimp.2026.117430",
+      "preprint_id": "",
+      "title": "Pirfenidone exerts anti-inflammatory effects by inhibiting CXCL6 to alleviate idiopathic pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:42750119",
+      "pmid": "42750119",
+      "doi": "10.1093/ajrcmb/aanag140",
+      "preprint_id": "",
+      "title": "Pathological Th2 cell activation via STAT6 pathway for pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:41997918",
+      "pmid": "41997918",
+      "doi": "10.4049/jimmunol.1601503",
+      "preprint_id": "",
+      "title": "Hdac11 promotes idiopathic pulmonary fibrosis through macrophage M2-type polarization and myofibroblast accumulation by inhibiting Parkin-dependent mitophagy.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:42620057",
+      "pmid": "42620057",
+      "doi": "10.64898/2026.07.31.742106",
+      "preprint_id": "",
+      "title": "ACKR1-expressing venous endothelial cells establish a pro-fibrotic niche in pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:42619955",
+      "pmid": "42619955",
+      "doi": "10.64898/2026.08.02.742235",
+      "preprint_id": "",
+      "title": "Inflammatory Fibroblasts Promote Repair After Injury Through Epithelial Proliferation.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:42538950",
+      "pmid": "42538950",
+      "doi": "10.64898/2026.07.21.738475",
+      "preprint_id": "",
+      "title": "Cell-Specific Modulation of the Aryl Hydrocarbon Receptor by Kynurenine in Pulmonary Fibrosis Requires Microenvironmental Crosstalk.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-21",
+      "recorded_at": "2026-09-21T00:38:48.767253+00:00"
     }
   ]
 }

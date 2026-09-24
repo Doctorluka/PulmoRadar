@@ -323,6 +323,114 @@
       "is_preprint": true,
       "run_date": "2026-09-21",
       "recorded_at": "2026-09-21T00:38:48.767253+00:00"
+    },
+    {
+      "paper_id": "pmid:42770225",
+      "pmid": "42770225",
+      "doi": "10.1161/CIRCULATIONAHA.126.081334",
+      "preprint_id": "",
+      "title": "Sotatercept Improves Right Heart Mechanics Despite Reduced Myocardial Contractility in Pulmonary Arterial Hypertension: A Prospective Exercise Hemodynamic Study.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:42713657",
+      "pmid": "42713657",
+      "doi": "10.1161/CIRCRESAHA.125.327869",
+      "preprint_id": "",
+      "title": "Mechanosensitive Stanniocalcin-1 Suppresses Pulmonary Artery Smooth Muscle Cell Proliferation and Attenuates Experimental Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:38695173",
+      "pmid": "38695173",
+      "doi": "10.1161/CIRCULATIONAHA.123.065304",
+      "preprint_id": "",
+      "title": "Deficiency of the Deubiquitinase UCHL1 Attenuates Pulmonary Arterial Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:42579367",
+      "pmid": "42579367",
+      "doi": "10.1159/000333089",
+      "preprint_id": "",
+      "title": "E-cigarette exposure triggers distal lung cell injury, persistent lung stress response, and antiviral immune suppression.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:42686753",
+      "pmid": "42686753",
+      "doi": "10.5281/zenodo.21427300",
+      "preprint_id": "",
+      "title": "Neutrophil NADPH oxidase breaks the inflammatory IL-1β/IL-17A circuit to enhance pathogen clearance during respiratory virus infections.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:31138703",
+      "pmid": "31138703",
+      "doi": "10.1073/pnas.1902310116",
+      "preprint_id": "",
+      "title": "BCL6 modulates tissue neutrophil survival and exacerbates pulmonary inflammation following influenza virus infection.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:42465492",
+      "pmid": "42465492",
+      "doi": "10.64898/2026.07.02.736230",
+      "preprint_id": "",
+      "title": "E2F1 Drives Endothelial Arterial Programming in Pulmonary Arterial Hypertension.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:42395503",
+      "pmid": "42395503",
+      "doi": "10.64898/2026.06.17.732997",
+      "preprint_id": "",
+      "title": "Targeting pathogenic VWF/ADAMTS13 dysregulation attenuates CTEPH progression.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:42427670",
+      "pmid": "42427670",
+      "doi": "10.64898/2026.07.02.736172",
+      "preprint_id": "",
+      "title": "Sphingosine 1-phosphate lyase expressed in pulmonary epithelial cells potentiates host innate defenses and alleviates influenza pathogenicity in mice.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-24",
+      "recorded_at": "2026-09-24T00:58:56.342924+00:00"
     }
   ]
 }

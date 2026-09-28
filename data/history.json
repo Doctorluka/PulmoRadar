@@ -431,6 +431,114 @@
       "is_preprint": true,
       "run_date": "2026-09-24",
       "recorded_at": "2026-09-24T00:58:56.342924+00:00"
+    },
+    {
+      "paper_id": "pmid:42788667",
+      "pmid": "42788667",
+      "doi": "10.1093/ajrccm/aamag497",
+      "preprint_id": "",
+      "title": "One-year progression of CT emphysema subtypes predict lung function decline: SPIROMICS.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:42085183",
+      "pmid": "42085183",
+      "doi": "10.1016/j.celrep.2026.117315",
+      "preprint_id": "",
+      "title": "Alveolar macrophages inhibit emphysematous pathology via expression of carbonic anhydrase 4.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:30510003",
+      "pmid": "30510003",
+      "doi": "10.1073/pnas.1813927115",
+      "preprint_id": "",
+      "title": "Basophils trigger emphysema development in a murine model of COPD through IL-4-mediated generation of MMP-12-producing macrophages.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:42627972",
+      "pmid": "42627972",
+      "doi": "10.1016/j.celrep.2026.117881",
+      "preprint_id": "",
+      "title": "Type I interferon-activated myeloid states are associated with less fibrotic stages in idiopathic pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:42685210",
+      "pmid": "42685210",
+      "doi": "10.1126/sciadv.adx9868",
+      "preprint_id": "",
+      "title": "Critical role for the TGF-β1/mTORC1 signaling axis in defining the transcriptional identity of CTHRC1+ pathologic fibroblasts.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:26921108",
+      "pmid": "26921108",
+      "doi": "10.1016/j.immuni.2016.01.001",
+      "preprint_id": "",
+      "title": "Macrophage Akt1 Kinase-Mediated Mitophagy Modulates Apoptosis Resistance and Pulmonary Fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:42779694",
+      "pmid": "42779694",
+      "doi": "10.64898/2026.09.11.750491",
+      "preprint_id": "",
+      "title": "Multi-omics reveals a monocyte-macrophage-fibroblast axis in post-COVID-19 fibroinflammatory lung remodelling.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:42388797",
+      "pmid": "42388797",
+      "doi": "10.1016/j.devcel.2021.11.007",
+      "preprint_id": "",
+      "title": "Alveolar niche disruption and aberrant epithelial reprogramming are early hallmarks of idiopathic pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:42620211",
+      "pmid": "42620211",
+      "doi": "10.64898/2026.08.03.742640",
+      "preprint_id": "",
+      "title": "Computational Analysis of Fibroblast Subpopulation Dynamics as a Driver of Fibrotic Foci Formation.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-09-28",
+      "recorded_at": "2026-09-28T01:16:37.251638+00:00"
     }
   ]
 }

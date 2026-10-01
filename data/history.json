@@ -539,6 +539,114 @@
       "is_preprint": true,
       "run_date": "2026-09-28",
       "recorded_at": "2026-09-28T01:16:37.251638+00:00"
+    },
+    {
+      "paper_id": "pmid:42813978",
+      "pmid": "42813978",
+      "doi": "10.1093/ajrcmb/aanag182",
+      "preprint_id": "",
+      "title": "Role of carbonic anhydrases 9 and 12 in hypoxia and non-hypoxia associated pulmonary hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:42779507",
+      "pmid": "42779507",
+      "doi": "10.1161/CIRCRESAHA.126.328338",
+      "preprint_id": "",
+      "title": "Pathogenic B-T Cell Axis Driven by BAFF Induces Endothelial Apoptosis in SLE-PAH.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:27119551",
+      "pmid": "27119551",
+      "doi": "10.1164/rccm.201510-2003OC",
+      "preprint_id": "",
+      "title": "HIPPO-Integrin-linked Kinase Cross-Talk Controls Self-Sustaining Proliferation and Survival in Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:42089309",
+      "pmid": "42089309",
+      "doi": "10.1093/ajrcmb/aanag057",
+      "preprint_id": "",
+      "title": "Temporal type I IFN signaling orchestrates protective and pathogenic inflammation post-influenza.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:42555354",
+      "pmid": "42555354",
+      "doi": "10.1016/j.celrep.2026.117783",
+      "preprint_id": "",
+      "title": "A CEBPB-IPO4-FASN-MAVS axis limits innate immune activation and viral pneumonia.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:38600381",
+      "pmid": "38600381",
+      "doi": "10.1007/1082_2019_1190",
+      "preprint_id": "",
+      "title": "Necroptosis blockade prevents lung injury in severe influenza.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:42427498",
+      "pmid": "42427498",
+      "doi": "10.1016/j.jacbts.2024.04.00",
+      "preprint_id": "",
+      "title": "Deletion of GPR39 Prevents Pulmonary Arterial Hypertension by Attenuating Hypoxia-Induced Aberrant Signaling.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:42523266",
+      "pmid": "42523266",
+      "doi": "10.64898/2026.07.10.737799",
+      "preprint_id": "",
+      "title": "IL-27 Signaling Protects Against Influenza-Associated Pulmonary Aspergillosis Through Inhibition of Type 2 Immunity and Enhanced Antifungal Immunity.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:42523326",
+      "pmid": "42523326",
+      "doi": "10.1073/pnas.2017616118",
+      "preprint_id": "",
+      "title": "An Inverse Transwell Assay for Airway Mucus Barrier Function Reveals both Virus- and Mucin-Specific Impacts on Infection.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-01",
+      "recorded_at": "2026-10-01T01:38:57.048121+00:00"
     }
   ]
 }

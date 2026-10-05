@@ -647,6 +647,114 @@
       "is_preprint": true,
       "run_date": "2026-10-01",
       "recorded_at": "2026-10-01T01:38:57.048121+00:00"
+    },
+    {
+      "paper_id": "pmid:42826512",
+      "pmid": "42826512",
+      "doi": "10.1093/ajrccm/aamag538",
+      "preprint_id": "",
+      "title": "Lung Health after Preterm Birth: Knowledge Gaps and Respiratory Care Across the Lifespan.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:40802822",
+      "pmid": "40802822",
+      "doi": "10.1164/rccm.202410-2101OC",
+      "preprint_id": "",
+      "title": "Distinct Morphological Types of Small Airway Obstructions in Smokers with Emphysema and End-Stage Chronic Obstructive Pulmonary Disease.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:37963864",
+      "pmid": "37963864",
+      "doi": "10.4049/jimmunol.164.11.5549",
+      "preprint_id": "",
+      "title": "TLR7 promotes smoke-induced experimental lung damage through the activity of mast cell tryptase.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:42821460",
+      "pmid": "42821460",
+      "doi": "10.1152/ajplung.00123.2026",
+      "preprint_id": "",
+      "title": "Neutrophils and CSF1 promote the expansion of monocyte-derived alveolar macrophages in progressive pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:40986746",
+      "pmid": "40986746",
+      "doi": "10.1165/rcmb.2024-0602OC",
+      "preprint_id": "",
+      "title": "The NADPH oxidase DUOX1 contributes to profibrotic macrophage activation and pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:31135379",
+      "pmid": "31135379",
+      "doi": "10.1073/pnas.1112499109",
+      "preprint_id": "",
+      "title": "Fra-2-expressing macrophages promote lung fibrosis in mice.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:42818508",
+      "pmid": "42818508",
+      "doi": "10.64898/2026.08.23.746574",
+      "preprint_id": "",
+      "title": "Mechanosignaling Promotes Macrophage Apoptosis Resistance in Pulmonary Fibrosis via Metabolic Reprogramming.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:42818166",
+      "pmid": "42818166",
+      "doi": "10.64898/2026.09.17.752506",
+      "preprint_id": "",
+      "title": "Lymphatic ERG Governs Junctional Plasticity and Fluid Clearance via an EDNRB Signaling Axis in Pulmonary Fibrosis.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
+    },
+    {
+      "paper_id": "pmid:42818353",
+      "pmid": "42818353",
+      "doi": "10.64898/2026.09.21.753278",
+      "preprint_id": "",
+      "title": "Clade B serpins promote direct basal-to-goblet cell differentiation in airways of patients with chronic obstructive pulmonary disease.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-05",
+      "recorded_at": "2026-10-05T01:23:21.607518+00:00"
     }
   ]
 }

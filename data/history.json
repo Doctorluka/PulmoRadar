@@ -863,6 +863,114 @@
       "is_preprint": true,
       "run_date": "2026-10-08",
       "recorded_at": "2026-10-08T02:29:45.883398+00:00"
+    },
+    {
+      "paper_id": "pmid:42844469",
+      "pmid": "42844469",
+      "doi": "10.1016/j.cels.2021.04.005",
+      "preprint_id": "",
+      "title": "Alveolar stem cells transdifferentiate to drive bronchiolar regeneration.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:42832275",
+      "pmid": "42832275",
+      "doi": "10.1093/ajrcmb/aanag202",
+      "preprint_id": "",
+      "title": "Aging in a Dish: Pulmonary Organoids as Models of Lung Aging.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:27979969",
+      "pmid": "27979969",
+      "doi": "10.1016/j.devcel.2015.02.014",
+      "preprint_id": "",
+      "title": "Noncanonical WNT-5A signaling impairs endogenous lung repair in COPD.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:42847995",
+      "pmid": "42847995",
+      "doi": "10.1172/jci.insight.199743",
+      "preprint_id": "",
+      "title": "Transplantation of endothelial progenitor cells attenuates pulmonary fibrosis via IFITM3-containing exosomes.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:42834439",
+      "pmid": "42834439",
+      "doi": "10.1093/ajrcmb/aanag199",
+      "preprint_id": "",
+      "title": "Impaired Macrophage Lipid Handling Initiates Lung Fibrosis via Lipid-Mediated Fibroblast Activation.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:31554736",
+      "pmid": "31554736",
+      "doi": "10.1126/scitranslmed.aaw1237",
+      "preprint_id": "",
+      "title": "Interleukin-11 is a therapeutic target in idiopathic pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:42818295",
+      "pmid": "42818295",
+      "doi": "10.5281/zenodo.11402686",
+      "preprint_id": "",
+      "title": "Kintsugi decides, gene by gene, where spatial transcriptomics borrows information.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:42538919",
+      "pmid": "42538919",
+      "doi": "10.1183/13993003.00981-2025",
+      "preprint_id": "",
+      "title": "Radiomics of the Airway (RadAr): Multi-Scale Airway Phenotyping for Disease Characterization on Routine CT Imaging.",
+      "topic": "monday",
+      "source": "medrxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:42818452",
+      "pmid": "42818452",
+      "doi": "10.64898/2026.09.21.26363534",
+      "preprint_id": "",
+      "title": "Intrathoracic Adipose Tissue and Airway Structure, Lung Function, and Respiratory Symptoms: The Framingham Heart Study.",
+      "topic": "monday",
+      "source": "medrxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-12",
+      "recorded_at": "2026-10-12T01:54:02.791383+00:00"
     }
   ]
 }

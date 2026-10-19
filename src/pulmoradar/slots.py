@@ -9,13 +9,14 @@ from .filters import keyword_bonus
 from .history import paper_keys
 from .models import Paper
 
-SlotKey = Literal["recent", "flagship_year", "classic", "preprint"]
+SlotKey = Literal["recent", "flagship_year", "classic", "preprint", "follow"]
 
 SLOT_LABELS: dict[str, str] = {
     "recent": "近一月高质量",
-    "flagship_year": "年内旗舰系统研究",
+    "flagship_year": "三年内旗舰系统研究",
     "classic": "领域经典",
     "preprint": "预印本",
+    "follow": "关注作者代表作",
 }
 
 
@@ -24,23 +25,18 @@ class QuotaError(RuntimeError):
 
 
 def slot_label(key: str) -> str:
-    if key == "recent":
-        return SLOT_LABELS["recent"]
-    if key == "flagship_year":
-        return SLOT_LABELS["flagship_year"]
-    if key == "classic":
-        return SLOT_LABELS["classic"]
-    if key == "preprint":
-        return SLOT_LABELS["preprint"]
-    unused: str = key
-    return unused or "已发表"
+    return SLOT_LABELS.get(key) or key or "已发表"
+
+
+def hard_quota(cfg: dict[str, Any]) -> bool:
+    return bool((cfg.get("selection") or {}).get("hard_quota", False))
 
 
 def window_days(cfg: dict[str, Any]) -> dict[str, int]:
     windows = cfg.get("windows") or {}
     return {
         "recent": int(windows.get("recent_days", 30)),
-        "flagship_year": int(windows.get("flagship_days", 365)),
+        "flagship_year": int(windows.get("flagship_days", 365 * 3)),
         "classic": int(windows.get("classic_days", 7300)),
         "preprint": int((windows.get("days") or [90])[-1]),
     }
@@ -129,6 +125,12 @@ def _llm_or_heuristic(
     return ranker.rank(pool[:shortlist], topic_cfg, cfg)[:n]
 
 
+def _require(message: str, cfg: dict[str, Any], notes: list[str]) -> None:
+    if hard_quota(cfg):
+        raise QuotaError(message)
+    notes.append(message)
+
+
 def select_published_slots(
     pool: list[Paper],
     topic_cfg: dict[str, Any],
@@ -137,8 +139,9 @@ def select_published_slots(
     today: date,
     dry_run: bool,
     label: str,
+    notes_out: list[str] | None = None,
 ) -> list[Paper]:
-    """Pick exactly 3 published papers: recent / year-flagship / classic."""
+    """Pick up to 3 published papers: recent / 3-year flagship / classic."""
     gate = (cfg.get("selection") or {}).get("quality_gate")
     extra = list(topic_cfg.get("preferred_journals", [])) + list(topic_cfg.get("extra_journals", []))
     days = window_days(cfg)
@@ -159,8 +162,9 @@ def select_published_slots(
         if recent is not None:
             notes.append(f"{label} 近一月槽回退到质量最高的已发表。")
     if recent is None:
-        raise QuotaError(f"{label} 无法凑满近一月高质量槽。")
-    chosen.append(assign_slot(recent, "recent"))
+        _require(f"{label} 近一月槽空缺。", cfg, notes)
+    else:
+        chosen.append(assign_slot(recent, "recent"))
 
     year_pool = [
         p
@@ -174,10 +178,11 @@ def select_published_slots(
         year_pick = _llm_or_heuristic(fallback, topic_cfg, cfg, dry_run, 1)
         flagship = year_pick[0] if year_pick else None
         if flagship is not None:
-            notes.append(f"{label} 年内旗舰槽回退到一年内高质量（不限档）。")
+            notes.append(f"{label} 三年内旗舰槽回退到三年内高质量（不限档）。")
     if flagship is None:
-        raise QuotaError(f"{label} 无法凑满年内旗舰系统研究槽。")
-    chosen.append(assign_slot(flagship, "flagship_year"))
+        _require(f"{label} 无法凑满三年内旗舰系统研究槽。", cfg, notes)
+    else:
+        chosen.append(assign_slot(flagship, "flagship_year"))
 
     classic_pool = _available(quality, chosen)
     classic_cfg = {
@@ -200,13 +205,14 @@ def select_published_slots(
         if classic is not None:
             notes.append(f"{label} 经典槽回退到质量最高的剩余论文。")
     if classic is None:
-        raise QuotaError(f"{label} 无法凑满领域经典槽。")
-    chosen.append(assign_slot(classic, "classic"))
+        _require(f"{label} 无法凑满领域经典槽。", cfg, notes)
+    else:
+        chosen.append(assign_slot(classic, "classic"))
 
-    if len(chosen) != 3:
-        raise QuotaError(f"{label} 已发表未凑满 3 篇（当前 {len(chosen)}）。")
     for paper in chosen:
         paper.scores["selection_notes"] = notes
+    if notes_out is not None:
+        notes_out.extend(notes)
     return chosen
 
 
@@ -218,6 +224,7 @@ def select_preprint_quota(
     n: int,
     dry_run: bool,
     label: str,
+    notes_out: list[str] | None = None,
 ) -> list[Paper]:
     if n <= 0:
         return []
@@ -227,7 +234,11 @@ def select_preprint_quota(
         extra = [p for p in _sort_quality(pool, cfg, topic_cfg) if not (paper_keys(p) & used)]
         ranked.extend(extra[: n - len(ranked)])
     if len(ranked) < n:
-        raise QuotaError(f"{label} 预印本必须 {n} 篇，过滤后只有 {len(ranked)} 篇。")
+        message = f"{label} 预印本 {len(ranked)}/{n}，不足不硬失败。"
+        if hard_quota(cfg):
+            raise QuotaError(f"{label} 预印本必须 {n} 篇，过滤后只有 {len(ranked)} 篇。")
+        if notes_out is not None:
+            notes_out.append(message)
     chosen = ranked[:n]
     for paper in chosen:
         assign_slot(paper, "preprint")

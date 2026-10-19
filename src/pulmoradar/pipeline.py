@@ -12,7 +12,8 @@ from .models import Paper
 from .preprints import fetch_preprints
 from .pubmed import fetch_pubmed
 from .renderer import embed_logo_data_uri, logo_asset, render_email, render_markdown
-from .slots import enrich_chosen, select_preprint_quota, select_published_slots, window_days
+from .follow import backfill_follow
+from .slots import QuotaError, enrich_chosen, hard_quota, select_preprint_quota, select_published_slots, window_days
 from .windows import expand_until, ladder_days, min_pool
 
 
@@ -86,12 +87,13 @@ def _collect_track(
         return pool
     if kind == "PubMed":
         spans = window_days(cfg)
-        year_raw = fetch_pubmed(topic_cfg, cfg, days=spans["flagship_year"])
+        window_retmax = int((cfg.get("pubmed") or {}).get("window_retmax") or (cfg.get("pubmed") or {}).get("retmax") or 200)
+        year_raw = fetch_pubmed(topic_cfg, cfg, days=spans["flagship_year"], retmax=window_retmax)
         classic_raw = fetch_pubmed(topic_cfg, cfg, days=spans["classic"], sort="relevance")
         merged = _merge_unique([year_raw, classic_raw])
         pool = _prepare_pool(merged, cfg, seen, topic_key, gate_cfg)
         notes.append(
-            f"{label} 年内 {len(year_raw)} 篇 + 经典窗 {len(classic_raw)} 篇，"
+            f"{label} 三年内 {len(year_raw)} 篇 + 经典窗 {len(classic_raw)} 篇，"
             f"合并 {len(merged)} 篇，过滤后 {len(pool)} 篇。"
         )
         return pool
@@ -154,8 +156,6 @@ def run_topic(
             pub_injected = published
         pub_pool = _collect_track(key, topic_cfg, cfg, seen, days_ladder, notes, pub_injected, "PubMed")
         n_pub = int(topic_cfg.get("published_n", cfg.get("selection", {}).get("published_n", 3)))
-        if n_pub != 3:
-            notes.append(f"{topic_cfg['name']} published_n={n_pub} 已按硬配额 3 执行。")
         chosen = select_published_slots(
             pub_pool,
             topic_cfg,
@@ -163,7 +163,27 @@ def run_topic(
             today=run_date,
             dry_run=dry_run,
             label=topic_cfg["name"],
+            notes_out=notes,
         )
+        gap = n_pub - len(chosen)
+        if gap > 0:
+            extra = backfill_follow(
+                chosen,
+                need=gap,
+                topic_key=key,
+                topic_cfg=topic_cfg,
+                cfg=cfg,
+                seen=seen,
+                notes=notes,
+            )
+            if extra:
+                notes.append(f"{topic_cfg['name']} 用关注作者代表作补充 {len(extra)} 篇。")
+            chosen.extend(extra)
+        if len(chosen) < n_pub:
+            message = f"{topic_cfg['name']} 已发表 {len(chosen)}/{n_pub}。"
+            if hard_quota(cfg):
+                raise QuotaError(f"{message}硬配额未凑满。")
+            notes.append(f"{message}不足不硬失败。")
         enrich_chosen(chosen, cfg, dry_run)
         chosen_sections.append((topic_cfg["name"], chosen))
 
@@ -200,6 +220,7 @@ def run_topic(
         n=n_pre,
         dry_run=dry_run,
         label=group_name,
+        notes_out=notes,
     )
     enrich_chosen(chosen_pre, cfg, dry_run)
 
@@ -225,6 +246,8 @@ def run_topic(
     out_html.write_text(embed_logo_data_uri(html, group_name), encoding="utf-8")
 
     if send and not dry_run:
+        if not chosen_pub and not chosen_pre:
+            raise QuotaError("没有入选论文，未发信。")
         send_email(cfg, subject, html, logo_path=logo_asset(group_name))
         history.save_history(history_path, history.record(hist, chosen_pub + chosen_pre, topic_key, run_date.isoformat()))
     elif send and dry_run:

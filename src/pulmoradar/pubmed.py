@@ -72,6 +72,7 @@ def search_ids(
     client: httpx.Client | None = None,
     days: int | None = None,
     sort: str | None = None,
+    retmax: int | None = None,
 ) -> list[str]:
     pubmed = cfg.get("pubmed", {})
     date_field = pubmed.get("date_field", "edat")
@@ -85,7 +86,7 @@ def search_ids(
                 {
                     "db": "pubmed",
                     "term": query,
-                    "retmax": str(pubmed.get("retmax", 200)),
+                    "retmax": str(retmax if retmax is not None else pubmed.get("retmax", 200)),
                     "usehistory": "n",
                 }
             )
@@ -345,9 +346,10 @@ def fetch_pubmed(
     client: httpx.Client | None = None,
     preprint: bool = False,
     sort: str | None = None,
+    retmax: int | None = None,
 ) -> list[Paper]:
     query = scoped_query(topic_cfg["pubmed_query"], preprint)
-    ids = search_ids(query, cfg, client=client, days=days, sort=sort)
+    ids = search_ids(query, cfg, client=client, days=days, sort=sort, retmax=retmax)
     papers = fetch_details(ids, cfg, client=client)
     if preprint:
         kept = []

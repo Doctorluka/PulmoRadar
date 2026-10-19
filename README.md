@@ -4,29 +4,30 @@
 
 | 时间（北京） | 主题 | 已发表 | 预印本 |
 | --- | --- | --- | --- |
-| 周一 06:43 | 慢性肺病机制：COPD / 肺气肿 + 肺纤维化（成纤维细胞 / 免疫） | **各恰好 3 篇** | **恰好 3 篇** |
-| 周四 06:43 | 肺动脉高压 / PAH + 流感病毒肺损伤 | **各恰好 3 篇** | **恰好 3 篇** |
+| 周一 06:43 | 慢性肺病机制：COPD / 肺气肿 + 肺纤维化（成纤维细胞 / 免疫） | 各最多 3 篇 | 最多 3 篇 |
+| 周四 06:43 | 肺动脉高压 / PAH + 流感病毒肺损伤 | 各最多 3 篇 | 最多 3 篇 |
 
-每栏 3 篇是硬配额，凑不齐就失败、不发信。已发表三篇角色固定：**近一月高质量**、**年内旗舰系统研究**、**领域经典**。预印本只要 3 篇，不拆角色。已推送的 PMID / DOI 记在 `data/history.json`。已发表与预印本都走 **NCBI PubMed / E-utilities**（预印本加 `preprint[pt]`）。
+已发表目标仍是 3 篇：**近一月高质量**、**三年内旗舰系统研究**、**领域经典**。凑不满时，先用 `config.yaml` 里 `follow` 作者的代表作补位（仍走同一套期刊质量门槛，且限在三年窗内）；还不够就按现有篇数发信，不再因为配额失败。整期一篇都没有时不发信。预印本同样最多 3 篇，不足不硬失败。已推送的 PMID / DOI 记在 `data/history.json`。已发表与预印本都走 **NCBI PubMed / E-utilities**（预印本加 `preprint[pt]`）。
 
 样刊：[`archive/2026-09-14-monday.html`](archive/2026-09-14-monday.html)、[`archive/2026-09-13-thursday.html`](archive/2026-09-13-thursday.html)。周四共用同一套 renderer，换蓝色 PAH 主题和对应 logo。
 
 ## 流水线
 
-1. **检索**：每个已发表 track 拉「近 1 年最新」+「约 20 年 relevance」两路 PubMed，合并去重。预印本仍按 10 → 30 → 60 → 90 天扩窗。
+1. **检索**：每个已发表 track 拉「近 3 年最新」+「约 20 年 relevance」两路 PubMed，合并去重。预印本仍按 10 → 30 → 60 → 90 天扩窗。
 2. **硬过滤**：丢掉综述 / Editorial / Letter / Case Report 等；丢掉纯临床试验；丢掉已推送条目；丢掉 Frontiers、MDPI 等出版社。
 3. **质量门槛**（只对已发表，满足其一即可）：**IF > 5**，或 **中科院 2025 大类 2 区及以上**，或 **新锐 2026 大类 2 区及以上**。表外期刊默认不入选。预印本不套这道门。
 4. **三槽选题**（质量优先，新近度只做近一月槽的排序）：
    - 第 1 篇：近 30 天里最新的高质量论文；不够则回退 90 天，再回退到质量最高篇。
-   - 第 2 篇：近 1 年、CNS / 大子刊 / 领域旗舰上的系统机制研究；不够则回退到一年内高质量。
-   - 第 3 篇：领域或子方向奠基性论文，可超出常规时间窗。
-5. **输出**：HTML 邮件 + `archive/{date}-{topic}.html` / `.md`。`--send` 才会发信并写入 history。凑不齐 3 篇会 `QuotaError`。
+   - 第 2 篇：近 3 年（1095 天）、CNS / 大子刊 / 领域旗舰上的系统机制研究；不够则回退到三年内高质量，期刊档不放宽。
+   - 第 3 篇：领域或子方向奠基性论文，可超出 3 年窗。
+   - 不足 3 篇时，从该 track 的 follow 作者里按人轮流补代表作。
+5. **输出**：HTML 邮件 + `archive/{date}-{topic}.html` / `.md`。`--send` 才会发信并写入 history。只有整期没有任何入选论文时才失败。
 
 云端由 [GitHub Actions](.github/workflows/digest.yml) 在北京时间周一、周四 06:43（UTC 前一日 22:43）跑 `python -m pulmoradar run --topic … --send`，并把更新后的 history 与 archive 提交回仓库。
 
 ## 选题口径
 
-- **COPD / 肺气肿**：肺泡破坏、稳态、再生，以及炎症细胞与肺泡损伤；尤其成纤维细胞和免疫细胞。
+- **COPD / 肺气肿**：肺泡破坏、稳态、再生。肺上皮（含 AT2 命运与过渡态）、肺 stromal cells、肺 immune cells 都收；非肺组织不收。Gan 2026 与 Sun 2026 的第一作者和通讯作者在 `follow` 里，只在 COPD 栏不够 3 篇时补位。
 - **肺纤维化**：机制研究，尤其成纤维细胞、肌成纤维细胞与免疫互作。
 - **PAH**：不限细分方向；优先 Circulation / Circulation Research / EHJ / ERJ / AJRCCM，其次 ATVB、Hypertension、Nature Communications 等。
 - **流感肺损伤**：上皮 / 基底细胞 / 免疫，偏病毒模型和修复读出。
@@ -42,7 +43,7 @@
 | JCR IF | Journal Impact Factor + Quartile | 2025（Clarivate 2026 年 6 月；LetPub 2026-06 核对） | [`data/jcr_if.yaml`](data/jcr_if.yaml) |
 | 中科院分区 | 升级版大类分区 | 2025 | [`data/cas_zone.yaml`](data/cas_zone.yaml) |
 | 新锐分区 | XinRui Journal Ranking 大类 | 2026 年 3 月 | [`data/xinyue_zone.yaml`](data/xinyue_zone.yaml) |
-| 期刊档 | CNS / 大子刊 / 旗舰，供年内槽使用 | — | [`data/journal_tiers.yaml`](data/journal_tiers.yaml) |
+| 期刊档 | CNS / 大子刊 / 旗舰，供三年内旗舰槽使用 | — | [`data/journal_tiers.yaml`](data/journal_tiers.yaml) |
 
 表头 `year` / `retrieved` 必须与数据一致。`jcr_if.yaml` 里个别刊会标 `source:`：`letpub_2026_06`（已按 ISSN 核对）、`user_confirmed`（人工确认）、`carry_forward`（沿用上一版）。表里没有的刊显示「未收录」。
 

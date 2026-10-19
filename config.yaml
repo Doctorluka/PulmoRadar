@@ -19,6 +19,7 @@ llm:
 pubmed:
   days_back: 90
   retmax: 200
+  window_retmax: 400
   contact_email: doctorfhz@gmail.com
   tool: pulmoradar
   api_key_env: NCBI_API_KEY
@@ -27,7 +28,7 @@ pubmed:
 windows:
   days: [10, 30, 60, 90]
   recent_days: 30
-  flagship_days: 365
+  flagship_days: 1095
   classic_days: 7300
   min_published_pool: 6
   min_preprint_pool: 6
@@ -35,7 +36,7 @@ windows:
 selection:
   published_n: 3
   preprint_n: 3
-  hard_quota: true
+  hard_quota: false
   screen_batch: 8
   rank_shortlist: 10
   fulltext_n: 12
@@ -92,21 +93,71 @@ topics:
     weekday: monday
     published_n: 3
     pubmed_query: >-
-      ("COPD"[Title/Abstract] OR "chronic obstructive pulmonary disease"[Title/Abstract]
-      OR emphysema[Title/Abstract] OR "alveolar destruction"[Title/Abstract]
-      OR "alveolar homeostasis"[Title/Abstract] OR "alveolar regeneration"[Title/Abstract]
-      OR "airspace enlargement"[Title/Abstract])
+      (
+        ("COPD"[Title/Abstract] OR "chronic obstructive pulmonary disease"[Title/Abstract]
+        OR emphysema[Title/Abstract] OR "alveolar destruction"[Title/Abstract]
+        OR "airspace enlargement"[Title/Abstract])
+      )
+      OR
+      (
+        (lung[Title/Abstract] OR alveolar[Title/Abstract] OR pulmonary[Title/Abstract])
+        AND
+        (
+          "alveolar type 2"[Title/Abstract] OR "alveolar type II"[Title/Abstract]
+          OR "AT2 cell"[Title/Abstract] OR "AT2 cells"[Title/Abstract]
+          OR "alveolar epithelial"[Title/Abstract] OR "alveolar progenitor"[Title/Abstract]
+          OR PATS[Title/Abstract] OR DATP[Title/Abstract] OR KRT8[Title/Abstract]
+          OR fibroblast[Title/Abstract] OR myofibroblast[Title/Abstract]
+          OR "stromal cell"[Title/Abstract] OR mesenchymal[Title/Abstract]
+          OR macrophage[Title/Abstract] OR neutrophil[Title/Abstract]
+          OR "T cell"[Title/Abstract] OR "immune cell"[Title/Abstract]
+        )
+        AND
+        (
+          regeneration[Title/Abstract] OR repair[Title/Abstract]
+          OR differentiation[Title/Abstract] OR "self-renewal"[Title/Abstract]
+          OR progenitor[Title/Abstract] OR transitional[Title/Abstract]
+          OR homeostasis[Title/Abstract]
+        )
+      )
     preprint_query: >-
-      (COPD OR "chronic obstructive pulmonary disease" OR emphysema
-      OR "alveolar destruction" OR "alveolar regeneration" OR "alveolar homeostasis")
+      (
+        (COPD OR "chronic obstructive pulmonary disease" OR emphysema
+        OR "alveolar destruction" OR "airspace enlargement")
+        OR
+        (
+          (lung OR alveolar OR pulmonary)
+          AND
+          ("alveolar type 2" OR "alveolar type II" OR "AT2 cell" OR "AT2 cells"
+          OR "alveolar epithelial" OR "alveolar progenitor" OR PATS OR DATP OR KRT8
+          OR fibroblast OR myofibroblast OR "stromal cell" OR mesenchymal
+          OR macrophage OR neutrophil OR "T cell" OR "immune cell")
+          AND
+          (regeneration OR repair OR differentiation OR "self-renewal" OR progenitor
+          OR transitional OR homeostasis)
+        )
+      )
     focus: >-
-      Mechanistic COPD/emphysema: alveolar destruction, homeostasis, regeneration,
-      inflammatory cells driving alveolar damage; especially fibroblasts and immune cells.
+      Mechanistic COPD/emphysema and alveolar maintenance: destruction, homeostasis, regeneration.
+      In scope: lung epithelium (AT2/AT1 fate, DATP, PATS, KRT8), lung stromal cells
+      (fibroblast, myofibroblast, mesenchymal stroma), and lung immune cells, when they drive
+      alveolar damage or repair. Out of scope: non-lung tissue, tumorigenesis as the endpoint,
+      embryonic development, and clinical COPD.
     boost_keywords:
       - alveolar destruction
       - alveolar regeneration
       - alveolar homeostasis
+      - alveolar epithelial
+      - AT2
+      - transitional
+      - DATP
+      - PATS
+      - KRT8
+      - self-renewal
+      - Wnt
       - emphysema
+      - stromal
+      - mesenchymal
       - fibroblast
       - myofibroblast
       - macrophage
@@ -244,3 +295,27 @@ profile:
     - sleep apnea
     - OSA
     - obstructive sleep
+
+# First or corresponding authors. Used only to fill a short published track.
+follow:
+  - name: Qiwen Gan
+    query: 'Gan Q[Author] AND ("Mount Sinai"[Affiliation] OR Icahn[Affiliation])'
+    topics: [copd]
+  - name: Zhe Ying
+    query: 'Ying Z[Author] AND ("Mount Sinai"[Affiliation] OR Icahn[Affiliation])'
+    topics: [copd]
+  - name: Slobodan Beronja
+    query: 'Beronja S[Author] AND ("Fred Hutchinson"[Affiliation] OR "Fred Hutch"[Affiliation])'
+    topics: [copd]
+  - name: Dawei Sun
+    query: 'Sun D[Author] AND ("Broad Institute"[Affiliation] OR "Stem Cell and Regenerative Biology"[Affiliation])'
+    topics: [copd]
+  - name: Daisy Hoagland
+    query: 'Hoagland D[Author] AND Harvard[Affiliation]'
+    topics: [copd]
+  - name: Ruth Franklin
+    query: 'Franklin R[Author] AND Harvard[Affiliation]'
+    topics: [copd]
+  - name: Fei Chen
+    query: 'Chen F[Author] AND "Broad Institute"[Affiliation]'
+    topics: [copd]

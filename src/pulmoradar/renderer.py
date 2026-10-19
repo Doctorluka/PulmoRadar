@@ -600,7 +600,7 @@ def render_email(
         <div style="margin:22px 0 12px;padding:12px 16px;background:{pre_module['module_dark']};color:#ffffff;"><span style="font-size:12px;color:#ffffff;opacity:.78;">PREPRINTS</span><h2 style="margin:5px 0 0;color:#ffffff;font-size:18px;">预印本精选</h2></div>
         {pre_html}
       </div>
-      <div class="email-pad" style="padding:18px 16px 24px;background:#f8f7f0;border-top:1px solid {theme['source_border']};color:#667575;font-size:12px;line-height:1.7;{_WRAP}">PulmoRadar · 每周发现值得阅读的肺部研究<br>本邮件用于科研信息整理，不构成医疗建议。解读与作者领域可能有误，请以原文为准。IF / JCR / 中科院 / 新锐分区来自仓库内固定表，运行时不联网查询。已发表门槛：IF&gt;5 <em>或</em> 中科院 2025 / 新锐 2026 大类 2 区及以上；并排除 Frontiers / MDPI 等。每栏硬配额 3 篇（近一月 / 年内旗舰 / 经典）。预印本不套用 IF/分区门槛，但必须 3 篇。</div>
+      <div class="email-pad" style="padding:18px 16px 24px;background:#f8f7f0;border-top:1px solid {theme['source_border']};color:#667575;font-size:12px;line-height:1.7;{_WRAP}">PulmoRadar · 每周发现值得阅读的肺部研究<br>本邮件用于科研信息整理，不构成医疗建议。解读与作者领域可能有误，请以原文为准。IF / JCR / 中科院 / 新锐分区来自仓库内固定表，运行时不联网查询。已发表门槛：IF&gt;5 <em>或</em> 中科院 2025 / 新锐 2026 大类 2 区及以上；并排除 Frontiers / MDPI 等。已发表目标 3 篇（近一月 / 三年内旗舰 / 经典），不足时用关注作者代表作补充，仍不足则按现有篇数发送。预印本不套用 IF/分区门槛。</div>
     </td></tr></table>
   </td></tr></table>
 </body></html>"""

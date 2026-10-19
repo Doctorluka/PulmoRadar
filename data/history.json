@@ -971,6 +971,114 @@
       "is_preprint": true,
       "run_date": "2026-10-12",
       "recorded_at": "2026-10-12T01:54:02.791383+00:00"
+    },
+    {
+      "paper_id": "pmid:42893666",
+      "pmid": "42893666",
+      "doi": "10.1016/j.intimp.2026.117568",
+      "preprint_id": "",
+      "title": "Stem cells inhibit cigarette smoke extract-induced dendritic cells activation and alleviate chronic obstructive pulmonary disease.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:37884305",
+      "pmid": "37884305",
+      "doi": "10.1038/s41586-020-2882-8",
+      "preprint_id": "",
+      "title": "Fibroblast growth factor 10 reverses cigarette smoke- and elastase-induced emphysema and pulmonary hypertension in mice.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:29420258",
+      "pmid": "29420258",
+      "doi": "10.1126/science.aam6603",
+      "preprint_id": "",
+      "title": "Single-cell Wnt signaling niches maintain stemness of alveolar type 2 cells.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:42537352",
+      "pmid": "42537352",
+      "doi": "10.1016/j.intimp.2026.117197",
+      "preprint_id": "",
+      "title": "FABP5 attenuates pulmonary fibrosis by regulating lipid metabolism in type II alveolar epithelial cells.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:40454481",
+      "pmid": "40454481",
+      "doi": "10.1038/s41557-018-0127-3",
+      "preprint_id": "",
+      "title": "PIEZO1 mediates periostin+ myofibroblast activation and pulmonary fibrosis in mice.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:37653024",
+      "pmid": "37653024",
+      "doi": "10.1038/s41467-023-40617-y",
+      "preprint_id": "",
+      "title": "Autocrine TGF-β-positive feedback in profibrotic AT2-lineage cells plays a crucial role in non-inflammatory lung fibrogenesis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:42812156",
+      "pmid": "42812156",
+      "doi": "10.1093/nar/gkw257",
+      "preprint_id": "",
+      "title": "Cytoskeletal-nuclear control of alveolar fibroblast identity directs lung regeneration.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:42812152",
+      "pmid": "42812152",
+      "doi": "10.1172/jci.insight.173374",
+      "preprint_id": "",
+      "title": "Co-optation of the regenerative role of type 2 alveolar cells in distal lung repair in mice by terminal airway epithelial cells in humans.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:42779722",
+      "pmid": "42779722",
+      "doi": "10.64898/2026.09.08.750170",
+      "preprint_id": "",
+      "title": "Dynamics of bleomycin-induced lung injury at single-nucleus resolution.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-19",
+      "recorded_at": "2026-10-19T14:45:44.514062+00:00"
     }
   ]
 }

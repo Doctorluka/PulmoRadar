@@ -1079,6 +1079,114 @@
       "is_preprint": true,
       "run_date": "2026-10-19",
       "recorded_at": "2026-10-19T14:45:44.514062+00:00"
+    },
+    {
+      "paper_id": "pmid:42877973",
+      "pmid": "42877973",
+      "doi": "10.1161/ATVBAHA.126.325037",
+      "preprint_id": "",
+      "title": "Prior Venous Thromboembolism Defines Distinct Genetic and Molecular Phenotypes in Chronic Thromboembolic Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:38261723",
+      "pmid": "38261723",
+      "doi": "10.1164/rccm.202305-0909OC",
+      "preprint_id": "",
+      "title": "Hypusine Signaling Promotes Pulmonary Vascular Remodeling in Pulmonary Arterial Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:32912104",
+      "pmid": "32912104",
+      "doi": "10.1161/CIRCRESAHA.120.316784",
+      "preprint_id": "",
+      "title": "Niacin Attenuates Pulmonary Hypertension Through H-PGDS in Macrophages.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:42900556",
+      "pmid": "42900556",
+      "doi": "10.1172/JCI204021",
+      "preprint_id": "",
+      "title": "Jet-injected combinational adjuvants potentiate naked mRNA vaccines for protection against respiratory viral infections in mice.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:41980941",
+      "pmid": "41980941",
+      "doi": "10.1016/j.cell.2021.04.048",
+      "preprint_id": "",
+      "title": "Mitophagy promotes lung repair and regeneration by restoring epithelial metabolic fitness.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:41063200",
+      "pmid": "41063200",
+      "doi": "10.1038/sj.bjp.0704769",
+      "preprint_id": "",
+      "title": "Monocyte-derived macrophages support alveolar regeneration via oncostatin M post-H1N1 infection during the recovery phase.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:42856256",
+      "pmid": "42856256",
+      "doi": "10.64898/2026.09.28.752142",
+      "preprint_id": "",
+      "title": "VPS34 regulation in pulmonary arterial vascular smooth muscle cells in pulmonary hypertension.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:42845641",
+      "pmid": "42845641",
+      "doi": "10.64898/2026.08.12.744509",
+      "preprint_id": "",
+      "title": "CD73 controls neutrophil responsiveness to type I interferon impairing antibacterial responses during secondary pneumococcal pneumonia.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:42845515",
+      "pmid": "42845515",
+      "doi": "10.64898/2026.08.10.744019",
+      "preprint_id": "",
+      "title": "A Time-Resolved Single-Cell Atlas Reveals Infection-Status, Age-, and Sex-Dependent Immune Responses Drive Viral Disease Severity.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-22",
+      "recorded_at": "2026-10-22T00:58:59.213466+00:00"
     }
   ]
 }

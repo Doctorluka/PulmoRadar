@@ -1187,6 +1187,114 @@
       "is_preprint": true,
       "run_date": "2026-10-22",
       "recorded_at": "2026-10-22T00:58:59.213466+00:00"
+    },
+    {
+      "paper_id": "pmid:42913002",
+      "pmid": "42913002",
+      "doi": "10.1126/sciadv.aef3338",
+      "preprint_id": "",
+      "title": "NAD+ metabolic restoration resolves the inflammation-immunocompetence trade-off in lung graft-versus-host disease.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:37768734",
+      "pmid": "37768734",
+      "doi": "10.1242/dev.199512",
+      "preprint_id": "",
+      "title": "Regulation of epithelial transitional states in murine and human pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:31873073",
+      "pmid": "31873073",
+      "doi": "10.1164/rccm.201207-1206OC",
+      "preprint_id": "",
+      "title": "β1 Integrin regulates adult lung alveolar epithelial cell inflammation.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:42841745",
+      "pmid": "42841745",
+      "doi": "10.1093/ajrcmb/aanag188",
+      "preprint_id": "",
+      "title": "Nerandomilast's Antifibrotic Effects Are Modulated by the tRF-AKAP12-PKA Axis in Pulmonary Fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:39827460",
+      "pmid": "39827460",
+      "doi": "10.1016/j.celrep.2024.115220",
+      "preprint_id": "",
+      "title": "TWEAK-Fn14 signaling protects mice from pulmonary fibrosis by inhibiting fibroblast activation and recruiting pro-regenerative macrophages.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:35728047",
+      "pmid": "35728047",
+      "doi": "10.1164/rccm.202106-1503OC",
+      "preprint_id": "",
+      "title": "Thromboxane-Prostanoid Receptor Signaling Drives Persistent Fibroblast Activation in Pulmonary Fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:42926426",
+      "pmid": "42926426",
+      "doi": "10.64898/2026.10.02.756373",
+      "preprint_id": "",
+      "title": "A tonic PDGFA-dependent niche organizer maintains alveolar homeostasis.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:42922639",
+      "pmid": "42922639",
+      "doi": "10.64898/2026.08.31.747360",
+      "preprint_id": "",
+      "title": "Sobetirome, a thyroid hormone receptor beta agonist, is a potential therapeutic agent for pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:42926547",
+      "pmid": "42926547",
+      "doi": "10.64898/2026.10.02.756280",
+      "preprint_id": "",
+      "title": "COPD Preferentially Disrupts Constitutive Redox Support Relative to Inducible Antioxidant Defense.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-26",
+      "recorded_at": "2026-10-26T00:51:32.533491+00:00"
     }
   ]
 }

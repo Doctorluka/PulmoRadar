@@ -1295,6 +1295,114 @@
       "is_preprint": true,
       "run_date": "2026-10-26",
       "recorded_at": "2026-10-26T00:51:32.533491+00:00"
+    },
+    {
+      "paper_id": "pmid:42945303",
+      "pmid": "42945303",
+      "doi": "10.1161/CIRCULATIONAHA.122.059594",
+      "preprint_id": "",
+      "title": "A GCN1-independent activator of the kinase GCN2.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42922444",
+      "pmid": "42922444",
+      "doi": "10.1161/CIRCRESAHA.125.328069",
+      "preprint_id": "",
+      "title": "Identification of a Novel EBF1-Expressing Disease-Associated Arterial Subpopulation in Pulmonary Arterial Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42934119",
+      "pmid": "42934119",
+      "doi": "10.1093/ajrccm/aamag496",
+      "preprint_id": "",
+      "title": "Therapeutic Targeting of the Macrophage YTHDC1/TIGAR/NF-κB Axis Mitigates Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42906723",
+      "pmid": "42906723",
+      "doi": "10.1016/j.mucimm.2026.100420",
+      "preprint_id": "",
+      "title": "Distinct regulation of influenza HA head- versus stem-specific B cell responses in HA mRNA-LNP vaccinated and naïve infant African green monkeys.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42089286",
+      "pmid": "42089286",
+      "doi": "10.1093/ajrcmb/aanag050",
+      "preprint_id": "",
+      "title": "Myeloid TLR2 signaling amplifies immunopathology in influenza-infected murine neonates.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:26999599",
+      "pmid": "26999599",
+      "doi": "10.1172/JCI62139",
+      "preprint_id": "",
+      "title": "Macrophage-epithelial paracrine crosstalk inhibits lung edema clearance during influenza infection.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42926434",
+      "pmid": "42926434",
+      "doi": "10.64898/2026.09.29.755207",
+      "preprint_id": "",
+      "title": "DLGAP5 promotes vascular cell proliferation and remodeling in pulmonary arterial hypertension.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42818300",
+      "pmid": "42818300",
+      "doi": "10.64898/2026.09.24.754254",
+      "preprint_id": "",
+      "title": "TFAM Dependent Mitochondrial Fitness Limits CD8⁺ T Cell Immunopathology and Sustains Protective Immunity during Viral Pneumonia.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42926533",
+      "pmid": "42926533",
+      "doi": "10.64898/2026.10.01.756055",
+      "preprint_id": "",
+      "title": "8-Oxoguanine transcriptional miscoding can transiently reproduce PAH-associated premature-stop transcripts.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-10-29",
+      "recorded_at": "2026-10-29T02:04:04.635196+00:00"
     }
   ]
 }

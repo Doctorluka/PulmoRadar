@@ -1403,6 +1403,114 @@
       "is_preprint": true,
       "run_date": "2026-10-29",
       "recorded_at": "2026-10-29T02:04:04.635196+00:00"
+    },
+    {
+      "paper_id": "pmid:42956577",
+      "pmid": "42956577",
+      "doi": "10.1016/j.intimp.2026.117605",
+      "preprint_id": "",
+      "title": "Myeloid integrin α9β1 deficiency protects alveolar bone by remodeling the immune microenvironment of periodontitis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:42949073",
+      "pmid": "42949073",
+      "doi": "10.1093/ajrcmb/aanag218",
+      "preprint_id": "",
+      "title": "MUC5B Overproduction Disrupts Club Cell Mediated Alveolar Repair in COPD.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:35046017",
+      "pmid": "35046017",
+      "doi": "10.1073/pnas.2019161119",
+      "preprint_id": "",
+      "title": "ISM1 protects lung homeostasis via cell-surface GRP78-mediated alveolar macrophage apoptosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:42735216",
+      "pmid": "42735216",
+      "doi": "10.1152/ajplung.00111.2026",
+      "preprint_id": "",
+      "title": "Adenoviral-mediated SIRT1 expression restores lung architecture and reduces fibrotic progression in experimental models.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:39642371",
+      "pmid": "39642371",
+      "doi": "10.1165/rcmb.2024-0255OC",
+      "preprint_id": "",
+      "title": "Targeting the Epigenetic Regulator CBX5 Promotes Fibroblast Metabolic Reprogramming and Inhibits Lung Fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:25365224",
+      "pmid": "25365224",
+      "doi": "10.1074/jbc.M113.498576",
+      "preprint_id": "",
+      "title": "TRPV4 mediates myofibroblast differentiation and pulmonary fibrosis in mice.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:42926539",
+      "pmid": "42926539",
+      "doi": "10.64898/2026.10.05.755686",
+      "preprint_id": "",
+      "title": "Integrin α3β1 is required for alveolar-capillary barrier formation through regulation of epithelial differentiation.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:42922612",
+      "pmid": "42922612",
+      "doi": "10.64898/2026.09.02.748971",
+      "preprint_id": "",
+      "title": "Delayed Tagging of ED-A Fibronectin-Mimetic Peptide in an RGD-Decorated Synthetic Matrix Induces Fibroblast-to-Myofibroblast Transition.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:42926488",
+      "pmid": "42926488",
+      "doi": "10.1101/2022.10.19.512902",
+      "preprint_id": "",
+      "title": "Conserved Fibroblast Subsets Drive Shared Fibrotic Mechanisms in Osteoarthritis Synovium and Systemic Sclerosis Skin.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-02",
+      "recorded_at": "2026-11-02T01:58:21.060507+00:00"
     }
   ]
 }

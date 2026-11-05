@@ -1511,6 +1511,114 @@
       "is_preprint": true,
       "run_date": "2026-11-02",
       "recorded_at": "2026-11-02T01:58:21.060507+00:00"
+    },
+    {
+      "paper_id": "pmid:42974708",
+      "pmid": "42974708",
+      "doi": "10.1161/CIRCULATIONAHA.125.078300",
+      "preprint_id": "",
+      "title": "Targeting ALDOA Lactylation Reverses Vascular Remodeling in Pulmonary Hypertension by Disrupting Actin Polymerization and YAP Activation.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:42905856",
+      "pmid": "42905856",
+      "doi": "10.1126/scitranslmed.aee0680",
+      "preprint_id": "",
+      "title": "Targeting ZIP12-mediated Zn2+ signaling as a treatment for pulmonary hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:30211629",
+      "pmid": "30211629",
+      "doi": "10.1164/rccm.201707-1370OC",
+      "preprint_id": "",
+      "title": "Toll-like Receptor 3 Is a Therapeutic Target for Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:42153329",
+      "pmid": "42153329",
+      "doi": "10.1093/ajrcmb/aanag068",
+      "preprint_id": "",
+      "title": "Meteorin-like ameliorates acute bacterial lung infection by enhancing neutrophil function.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:42957847",
+      "pmid": "42957847",
+      "doi": "10.1186/s13059-014-0550-8",
+      "preprint_id": "",
+      "title": "Autophagy in macrophages curtails IL-1α-mediated immune priming against lung infections.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:36534084",
+      "pmid": "36534084",
+      "doi": "10.1038/nature13903",
+      "preprint_id": "",
+      "title": "Regulation of the alveolar regenerative niche by amphiregulin-producing regulatory T cells.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:42856342",
+      "pmid": "42856342",
+      "doi": "10.64898/2026.10.01.756024",
+      "preprint_id": "",
+      "title": "RSV & rhinovirus coinfection order dictates outcome via type III interferon-mediated interference in infant respiratory epithelium.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:42845354",
+      "pmid": "42845354",
+      "doi": "10.1038/s41467-022-28803-w",
+      "preprint_id": "",
+      "title": "Juvenile influenza can impair myelin development and adult behavior through chemokine signaling in mice.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:42779658",
+      "pmid": "42779658",
+      "doi": "10.1002/mabi.202200424",
+      "preprint_id": "",
+      "title": "Spatiotemporal control of STING activation and saRNA delivery decouples humoral and cellular immunity.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-05",
+      "recorded_at": "2026-11-05T02:54:05.126486+00:00"
     }
   ]
 }

@@ -1619,6 +1619,114 @@
       "is_preprint": true,
       "run_date": "2026-11-05",
       "recorded_at": "2026-11-05T02:54:05.126486+00:00"
+    },
+    {
+      "paper_id": "pmid:42993069",
+      "pmid": "42993069",
+      "doi": "10.1093/ajrccm/aamag599",
+      "preprint_id": "",
+      "title": "Development and Validation of a Pre-COPD Score to Predict Incident COPD.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:38114516",
+      "pmid": "38114516",
+      "doi": "10.1038/s41592-021-01346-6",
+      "preprint_id": "",
+      "title": "Alveolar epithelial progenitor cells require Nkx2-1 to maintain progenitor-specific epigenomic state during lung homeostasis and regeneration.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:37279065",
+      "pmid": "37279065",
+      "doi": "10.1242/dev.183855",
+      "preprint_id": "",
+      "title": "Alveolar repair following LPS-induced injury requires cell-ECM interactions.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:42529800",
+      "pmid": "42529800",
+      "doi": "10.1111/bph.70580",
+      "preprint_id": "",
+      "title": "Honokiol regulates Acute respiratory distress syndrome (ARDS)-associated pulmonary fibrosis via the miR-19a-3p/POSTN axis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:40493404",
+      "pmid": "40493404",
+      "doi": "10.1172/jci.insight.153948",
+      "preprint_id": "",
+      "title": "Wilms tumor 1 impairs apoptotic clearance of fibroblasts in distal fibrotic lung lesions.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:36450109",
+      "pmid": "36450109",
+      "doi": "10.1165/rcmb.2022-0219OC",
+      "preprint_id": "",
+      "title": "VISTA (PD-1H) Is a Crucial Immune Regulator to Limit Pulmonary Fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:42995904",
+      "pmid": "42995904",
+      "doi": "10.64898/2026.10.20.760415",
+      "preprint_id": "",
+      "title": "Mitochondria-Targeted OGG1 remodels Alveolar Epithelial Transitional States and Immune-Epithelial Communication after Chlorine Lung Injury.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:42856719",
+      "pmid": "42856719",
+      "doi": "10.1002/eji.201242550",
+      "preprint_id": "",
+      "title": "β2 Integrins Differentially Regulate Macrophage Polarization, Inflammatory Signaling, and Function: A Prominent Role for CD11d.",
+      "topic": "monday",
+      "source": "preprint",
+      "is_preprint": true,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:42995806",
+      "pmid": "42995806",
+      "doi": "10.64898/2026.07.21.739843",
+      "preprint_id": "",
+      "title": "Dynamic hybrid-hydrogel lung models decouple matrix composition, stiffness, and fibroblast conditioning to define distinct drivers of fibrotic progression.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-09",
+      "recorded_at": "2026-11-09T02:10:00.484170+00:00"
     }
   ]
 }

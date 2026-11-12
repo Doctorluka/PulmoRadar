@@ -1727,6 +1727,114 @@
       "is_preprint": true,
       "run_date": "2026-11-09",
       "recorded_at": "2026-11-09T02:10:00.484170+00:00"
+    },
+    {
+      "paper_id": "pmid:43010659",
+      "pmid": "43010659",
+      "doi": "10.1152/ajplung.00385.2025",
+      "preprint_id": "",
+      "title": "Na+/H+ Exchanger Isoform 1 Regulates Apoptosis Susceptibility in Pulmonary Arterial Smooth Muscle from the Sugen/Hypoxia model of Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:43007062",
+      "pmid": "43007062",
+      "doi": "10.1161/HYPERTENSIONAHA.126.27213",
+      "preprint_id": "",
+      "title": "ZEB1-Driven GLS1 Transcription Promotes Macrophage Glutamine Metabolism in PAH.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:40401371",
+      "pmid": "40401371",
+      "doi": "10.1161/ATVBAHA.124.321173",
+      "preprint_id": "",
+      "title": "Single-Cell and Spatial Transcriptomics Identified Fatty Acid-Binding Proteins Controlling Endothelial Glycolytic and Arterial Programming in Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:42873867",
+      "pmid": "42873867",
+      "doi": "10.1126/sciadv.aef3207",
+      "preprint_id": "",
+      "title": "Polyclonal breast milk-derived secretory IgA confers broad antiviral protection against multiple respiratory viruses.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:38227369",
+      "pmid": "38227369",
+      "doi": "10.1073/pnas.0804958105",
+      "preprint_id": "",
+      "title": "Myeloid Zfhx3 deficiency protects against hypercapnia-induced suppression of host defense against influenza A virus.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:37726288",
+      "pmid": "37726288",
+      "doi": "10.1038/s41467-023-41387-3",
+      "preprint_id": "",
+      "title": "Epithelial plasticity and innate immune activation promote lung tissue remodeling following respiratory viral infection.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:42990153",
+      "pmid": "42990153",
+      "doi": "10.1101/2025.05.02.651303",
+      "preprint_id": "",
+      "title": "EBF1 controls an embryonic artery-forming niche that reactivates in pulmonary arterial hypertension.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:42999222",
+      "pmid": "42999222",
+      "doi": "10.64898/2026.10.12.758636",
+      "preprint_id": "",
+      "title": "A Single-Cell Atlas of PVOD Across the Lifespan Reveals Cellular and Molecular Therapeutic Targets.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:42990147",
+      "pmid": "42990147",
+      "doi": "10.64898/2026.10.22.761022",
+      "preprint_id": "",
+      "title": "Genome-Wide Transcriptomics Uncovers a Lung-to-Aorta Inflammatory Program Driving Influenza-Induced Atherosclerosis Exacerbation.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-12",
+      "recorded_at": "2026-11-12T03:28:38.894297+00:00"
     }
   ]
 }

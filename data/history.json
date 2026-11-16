@@ -1835,6 +1835,114 @@
       "is_preprint": true,
       "run_date": "2026-11-12",
       "recorded_at": "2026-11-12T03:28:38.894297+00:00"
+    },
+    {
+      "paper_id": "pmid:43033544",
+      "pmid": "43033544",
+      "doi": "10.1016/j.intimp.2026.117666",
+      "preprint_id": "",
+      "title": "Maresin 1 promotes alveolar epithelial regeneration in LPS-induced acute lung injury via the Rac1-WASF2-Arp2/3 pathway.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:40333185",
+      "pmid": "40333185",
+      "doi": "10.1016/j.celrep.2025.115645",
+      "preprint_id": "",
+      "title": "YAP/TAZ activity in PDGFRα-expressing alveolar fibroblasts modulates AT2 proliferation through Wnt4.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:28886382",
+      "pmid": "28886382",
+      "doi": "10.1016/j.cell.2017.07.034",
+      "preprint_id": "",
+      "title": "Distinct Mesenchymal Lineages and Niches Promote Epithelial Self-Renewal and Myofibrogenesis in the Lung.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:42772040",
+      "pmid": "42772040",
+      "doi": "10.1016/j.intimp.2026.117455",
+      "preprint_id": "",
+      "title": "Perivascular stromal cells derived from CD34+CD45+ cells promote pulmonary vascular barrier repair in a rat model of phosgene-induced acute lung injury via the VEGF-PI3K/AKT/eNOS signaling pathway.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:42608398",
+      "pmid": "42608398",
+      "doi": "10.1038/gt.2017.80",
+      "preprint_id": "",
+      "title": "Corisin induces proteostasis stress to drive epithelial injury and pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:40675771",
+      "pmid": "40675771",
+      "doi": "10.1016/j.celrep.2023.113414",
+      "preprint_id": "",
+      "title": "Integrated spatial and single-cell transcriptomics reveal PAK kinase as a therapeutic target in fibroblastic foci and dense fibrosis of idiopathic pulmonary fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:42990470",
+      "pmid": "42990470",
+      "doi": "10.64898/2026.10.27.762279",
+      "preprint_id": "",
+      "title": "Follistatin-like 1 Promotes Neutrophil-mediated Host Defense against Klebsiella pneumoniae.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:42926406",
+      "pmid": "42926406",
+      "doi": "10.64898/2026.10.01.755741",
+      "preprint_id": "",
+      "title": "RORγ Inverse Agonism Redirects Tumour-Conditioned Emergency Myelopoiesis and Attenuates Established Tumour Progression.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:42990248",
+      "pmid": "42990248",
+      "doi": "10.64898/2026.10.24.761570",
+      "preprint_id": "",
+      "title": "Targeting alpha-ketoglutarate starvation within the tumor-immune microenvironment rescues T cell effector function in cancer immunotherapy.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-16",
+      "recorded_at": "2026-11-16T02:33:50.596073+00:00"
     }
   ]
 }

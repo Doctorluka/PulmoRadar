@@ -1943,6 +1943,114 @@
       "is_preprint": true,
       "run_date": "2026-11-16",
       "recorded_at": "2026-11-16T02:33:50.596073+00:00"
+    },
+    {
+      "paper_id": "pmid:43013669",
+      "pmid": "43013669",
+      "doi": "10.1126/sciadv.aei5388",
+      "preprint_id": "",
+      "title": "Cocrystals for sequestering and separating large PAHs.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:42929140",
+      "pmid": "42929140",
+      "doi": "10.1161/CIRCRESAHA.126.329553",
+      "preprint_id": "",
+      "title": "CCR2-Dependent Myeloid Cell Recruitment Links Post-MI Heart Failure to Pulmonary Hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:31391533",
+      "pmid": "31391533",
+      "doi": "10.1016/j.ddmod.2011.04.001",
+      "preprint_id": "",
+      "title": "CD146-HIF-1α hypoxic reprogramming drives vascular remodeling and pulmonary arterial hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:43037057",
+      "pmid": "43037057",
+      "doi": "10.1038/s41598-018-26538-7",
+      "preprint_id": "",
+      "title": "Mucosal vaccination with hemagglutinin stalk provides broad protection against influenza virus subtypes in mice.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:39353439",
+      "pmid": "39353439",
+      "doi": "10.1038/ni1008-1091",
+      "preprint_id": "",
+      "title": "Antiviral innate immune memory in alveolar macrophages following SARS-CoV-2 infection ameliorates secondary influenza A virus disease.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:29079611",
+      "pmid": "29079611",
+      "doi": "10.1371/journal.ppat.1001191",
+      "preprint_id": "",
+      "title": "Neutrophils drive alveolar macrophage IL-1β release during respiratory viral infection.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:43010947",
+      "pmid": "43010947",
+      "doi": "",
+      "preprint_id": "",
+      "title": "Morphological Features of Murine Pulmonary Arterial Networks for Diagnosing Vascular Disease.",
+      "topic": "thursday",
+      "source": "preprint",
+      "is_preprint": true,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:42995862",
+      "pmid": "42995862",
+      "doi": "10.64898/2026.10.16.756787",
+      "preprint_id": "",
+      "title": "Physics-informed neural network for predicting myocardial mechanics from in vivo physiological measurements.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:42763443",
+      "pmid": "42763443",
+      "doi": "10.1016/j.cotox.2023.100392",
+      "preprint_id": "",
+      "title": "Evidence from three taxonomically distinct species for a non-AhR mechanism of developmental neurotoxicity of an environmentally derived mixture of polycyclic aromatic hydrocarbons.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-19",
+      "recorded_at": "2026-11-19T04:01:53.595934+00:00"
     }
   ]
 }

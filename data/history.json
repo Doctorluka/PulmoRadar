@@ -2051,6 +2051,114 @@
       "is_preprint": true,
       "run_date": "2026-11-19",
       "recorded_at": "2026-11-19T04:01:53.595934+00:00"
+    },
+    {
+      "paper_id": "pmid:43051450",
+      "pmid": "43051450",
+      "doi": "10.1016/j.chest.2026.03.049",
+      "preprint_id": "",
+      "title": "Atherosclerotic cardiovascular disease risk prediction in individuals with and without impaired spirometry.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:42085259",
+      "pmid": "42085259",
+      "doi": "10.1093/ajrccm/aamag116",
+      "preprint_id": "",
+      "title": "Prostaglandin I2 receptor activation promotes alveolar regeneration via the JUN/p53 pathway.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:29489752",
+      "pmid": "29489752",
+      "doi": "10.1016/j.molcel.2010.05.004",
+      "preprint_id": "",
+      "title": "Regeneration of the lung alveolus by an evolutionarily conserved epithelial progenitor.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:43050500",
+      "pmid": "43050500",
+      "doi": "10.1126/scitranslmed.adw3631",
+      "preprint_id": "",
+      "title": "Noradrenergic input from sympathetic nerves to fibroblasts regulates lung fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:43008016",
+      "pmid": "43008016",
+      "doi": "10.1073/pnas.2609811123",
+      "preprint_id": "",
+      "title": "Extracellular vesicles presenting \"don't eat me\" signal limit the efferocytic capacity in lung fibrosis.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:35777761",
+      "pmid": "35777761",
+      "doi": "10.1080/14712598.2019.1566456",
+      "preprint_id": "",
+      "title": "Bone morphogenetic protein 4 inhibits pulmonary fibrosis by modulating cellular senescence and mitophagy in lung fibroblasts.",
+      "topic": "monday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:43060179",
+      "pmid": "43060179",
+      "doi": "10.64898/2026.11.08.765110",
+      "preprint_id": "",
+      "title": "Alveolar and airway progenitors converge on an epigenetically encoded profibrotic state.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:43060380",
+      "pmid": "43060380",
+      "doi": "10.64898/2026.11.03.763791",
+      "preprint_id": "",
+      "title": "Comparative molecular analysis of histopathologic subtypes reveals shared epithelial remodeling yet distinct fibroblast programs in scleroderma lung disease.",
+      "topic": "monday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:43060192",
+      "pmid": "43060192",
+      "doi": "10.64898/2026.11.12.26367877",
+      "preprint_id": "",
+      "title": "Single-cell lung eQTL colocalization implicates alveolar epithelial regulatory effects at COPD lung-function loci.",
+      "topic": "monday",
+      "source": "medrxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-23",
+      "recorded_at": "2026-11-23T03:19:47.683287+00:00"
     }
   ]
 }

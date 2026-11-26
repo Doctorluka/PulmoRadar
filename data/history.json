@@ -2159,6 +2159,90 @@
       "is_preprint": true,
       "run_date": "2026-11-23",
       "recorded_at": "2026-11-23T03:19:47.683287+00:00"
+    },
+    {
+      "paper_id": "pmid:43067380",
+      "pmid": "43067380",
+      "doi": "10.1016/j.chest.2026.11.011",
+      "preprint_id": "",
+      "title": "Cardiopulmonary exercise testing responses to treatment in patients with pulmonary arterial hypertension and cardiopulmonary comorbidities.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-26",
+      "recorded_at": "2026-11-26T04:28:45.902020+00:00"
+    },
+    {
+      "paper_id": "pmid:39316438",
+      "pmid": "39316438",
+      "doi": "10.1161/CIRCULATIONAHA.116.021494",
+      "preprint_id": "",
+      "title": "GCN2 kinase activation mediates pulmonary vascular remodeling and pulmonary arterial hypertension.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-26",
+      "recorded_at": "2026-11-26T04:28:45.902020+00:00"
+    },
+    {
+      "paper_id": "pmid:35641514",
+      "pmid": "35641514",
+      "doi": "10.1016/j.thromres.2019.10.022",
+      "preprint_id": "",
+      "title": "Omega-3 fatty acid epoxides produced by PAF-AH2 in mast cells regulate pulmonary vascular remodeling.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-26",
+      "recorded_at": "2026-11-26T04:28:45.902020+00:00"
+    },
+    {
+      "paper_id": "pmid:42894802",
+      "pmid": "42894802",
+      "doi": "10.1038/s41598-025-16312-x",
+      "preprint_id": "",
+      "title": "CD8+ T cell transcriptional reprogramming toward TCF7-low cytotoxicity drives immune aging in viral ARDS.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-26",
+      "recorded_at": "2026-11-26T04:28:45.902020+00:00"
+    },
+    {
+      "paper_id": "pmid:42089290",
+      "pmid": "42089290",
+      "doi": "10.1172/jci.insight.167082",
+      "preprint_id": "",
+      "title": "Anellovirus-mediated interferon dysregulation enhances virus-induced lung injury.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-26",
+      "recorded_at": "2026-11-26T04:28:45.902020+00:00"
+    },
+    {
+      "paper_id": "pmid:42861596",
+      "pmid": "42861596",
+      "doi": "10.3791/2513",
+      "preprint_id": "",
+      "title": "Matrix Metalloproteinase-8 Deficiency Alters the Balance Between Viral Clearance and Immunopathology in H1N1 Infection.",
+      "topic": "thursday",
+      "source": "pubmed",
+      "is_preprint": false,
+      "run_date": "2026-11-26",
+      "recorded_at": "2026-11-26T04:28:45.902020+00:00"
+    },
+    {
+      "paper_id": "pmid:43060291",
+      "pmid": "43060291",
+      "doi": "10.64898/2026.10.28.762535",
+      "preprint_id": "",
+      "title": "Induced microfold cells are required for the function of pulmonary tertiary lymphoid organs that promote mucosal immunity.",
+      "topic": "thursday",
+      "source": "biorxiv",
+      "is_preprint": true,
+      "run_date": "2026-11-26",
+      "recorded_at": "2026-11-26T04:28:45.902020+00:00"
     }
   ]
 }
